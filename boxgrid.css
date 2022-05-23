@@ -1,0 +1,54 @@
+body {
+  width: 90%;
+  margin: auto;
+}
+
+ div {
+   font-size: 0;
+  }
+
+  .fit {
+    margin: 0;
+    height: 80%;
+    width: auto;
+    overflow: hidden
+  }
+
+  .row {
+    background: white;
+    margin: 0;
+    padding: 1em;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: left;
+
+  }
+
+figure {
+  margin:0;
+  padding: 1% 0;
+  max-height: 16%;
+  width: 40%;
+  overflow: hidden;
+  display: inline-block;
+}
+
+@media screen and (min-width:50em) {
+figure {
+  width: calc(17% - 6px);
+  height: calc(17%-6px)
+}
+
+}
+figure:hover img {
+transform: scale(1.15);
+}
+
+img {
+height: 100%;
+width: auto;
+margin: 0 auto;
+display: block;
+background: rgb(255, 255, 255);
+transition: transform .2s ease-in-out;
+}
