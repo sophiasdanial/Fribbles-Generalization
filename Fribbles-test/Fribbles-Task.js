@@ -317,19 +317,14 @@ var testblock = {
     timeline: [testchoice],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    data: {
-        test_part: 'test'
-    }
+    data: jsPsych.timelineVariable('data')
 };
 
 timeline.push(testblock);
 
 /* define results for Qualtrics*/
 
-var total_trials = jsPsych.data.get().filter({
-    test_part: 'test'
-});
-
+/// f111_
 var f1112 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "1",
@@ -342,6 +337,7 @@ var f1113 = jsPsych.data.get().filter({
     tail1_type: "1",
     head_type: "3"
 }).select('response').values;
+///f112_
 var f1122 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "1",
@@ -354,6 +350,7 @@ var f1123 = jsPsych.data.get().filter({
     tail1_type: "2",
     head_type: "3"
 }).select('response').values;
+///f113_
 var f1132 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "1",
@@ -366,13 +363,20 @@ var f1133 = jsPsych.data.get().filter({
     tail1_type: "3",
     head_type: "3"
 }).select('response').values;
-
+///f121_
+var f1212 = jsPsych.data.get().filter({
+    leg_type: "1",
+    tail2_type: "2",
+    tail1_type: "1",
+    head_type: "2"
+}).select('response').values;
 var f1213 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "2",
     tail1_type: "1",
     head_type: "3"
 }).select('response').values;
+///f122_
 var f1222 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "2",
@@ -385,6 +389,7 @@ var f1223 = jsPsych.data.get().filter({
     tail1_type: "2",
     head_type: "3"
 }).select('response').values;
+///f123_
 var f1232 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "2",
@@ -397,7 +402,7 @@ var f1233 = jsPsych.data.get().filter({
     tail1_type: "3",
     head_type: "3"
 }).select('response').values;
-
+///f131_
 var f1312 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "3",
@@ -410,6 +415,7 @@ var f1313 = jsPsych.data.get().filter({
     tail1_type: "1",
     head_type: "3"
 }).select('response').values;
+///f132_
 var f1322 = jsPsych.data.get().filter({
     leg_type: "1",
     tail2_type: "3",
@@ -421,4 +427,131 @@ var f1323 = jsPsych.data.get().filter({
     tail2_type: "3",
     tail1_type: "2",
     head_type: "3"
+}).select('response').values;
+///f133_
+var f1332 = jsPsych.data.get().filter({
+    leg_type: "1",
+    tail2_type: "3",
+    tail1_type: "3",
+    head_type: "2"
+}).select('response').values;
+var f1333 = jsPsych.data.get().filter({
+    leg_type: "1",
+    tail2_type: "3",
+    tail1_type: "3",
+    head_type: "3"
+}).select('response').values;
+///f21__
+var f2111 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "1",
+    tail1_type: "1",
+    head_type: "1"
+}).select('response').values;
+var f2121 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "1",
+    tail1_type: "2",
+    head_type: "1"
+}).select('response').values;
+var f2131 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "1",
+    tail1_type: "3",
+    head_type: "1"
+}).select('response').values;
+///f22__
+var f2211 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "2",
+    tail1_type: "1",
+    head_type: "1"
+}).select('response').values;
+var f2221 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "2",
+    tail1_type: "2",
+    head_type: "1"
+}).select('response').values;
+var f2231 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "2",
+    tail1_type: "3",
+    head_type: "1"
+}).select('response').values;
+///f23__
+var f2311 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "3",
+    tail1_type: "1",
+    head_type: "1"
+}).select('response').values;
+var f2321 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "3",
+    tail1_type: "2",
+    head_type: "1"
+}).select('response').values;
+var f2331 = jsPsych.data.get().filter({
+    leg_type: "2",
+    tail2_type: "3",
+    tail1_type: "3",
+    head_type: "1"
+}).select('response').values;
+///f31__
+var f3111 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "1",
+    tail1_type: "1",
+    head_type: "1"
+}).select('response').values;
+var f3121 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "1",
+    tail1_type: "2",
+    head_type: "1"
+}).select('response').values;
+var f3131 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "1",
+    tail1_type: "3",
+    head_type: "1"
+}).select('response').values;
+///f32__
+var f3211 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "2",
+    tail1_type: "1",
+    head_type: "1"
+}).select('response').values;
+var f3221 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "2",
+    tail1_type: "2",
+    head_type: "1"
+}).select('response').values;
+var f3231 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "2",
+    tail1_type: "3",
+    head_type: "1"
+}).select('response').values;
+///f33__
+var f3311 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "3",
+    tail1_type: "1",
+    head_type: "1"
+}).select('response').values;
+var f3321 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "3",
+    tail1_type: "2",
+    head_type: "1"
+}).select('response').values;
+var f3331 = jsPsych.data.get().filter({
+    leg_type: "3",
+    tail2_type: "3",
+    tail1_type: "3",
+    head_type: "1"
 }).select('response').values;
