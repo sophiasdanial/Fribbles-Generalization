@@ -1,0 +1,96 @@
+<style>
+    body {
+        overflow:hidden;
+        height: 100vh
+    }
+    .main {
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 120%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        font-size: 1em;
+        text-align: center;
+        animation-delay: 1s;
+        animation: slidedown 30s;
+    }
+    @keyframes slidedown {
+        0% {top: -10%;}
+        15% {top: 20%;}
+        87% {top: 20%;}
+        100% {top: 120%;}
+    }
+    @keyframes slide1 {
+        0% {top:50%; left:110%;}
+        20% {top:50%; left:110%;}
+        35% {top:50%; left:25%;}
+        85% {top:50%; left:25%;}
+        100% {top:5%; left:5%;}
+    }
+    @keyframes slide2 {
+        0% {top:50%; left:110%;}
+        35% {top:50%; left:110%;}
+        50% {top:50%; left:50%;}
+        85% {top:50%; left:50%;}
+        100% {top:5%; left:15%;}
+    }
+    @keyframes slide3 {
+        0% {top:50%; left:110%;}
+        50% {top:50%; left:110%;}
+        70% {top:50%; left:75%;}
+        85% {top:50%; left:75%;}
+        100% {top:5%; left:25%;}
+    }
+    @keyframes size {
+        0% {width: 400px; height: 300px;}
+        85% {width: 400px; height: 300px;}
+        100% {width: 133px; height: 100px;}
+    }
+
+    .eg1 {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        top: 5%;
+        left: 5%;
+        animation-delay: 6s;
+        animation: slide1 30s;
+    }
+    .eg2 {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 5%;
+        left: 15%;
+        animation-delay: 6s;
+        animation: slide2 30s;
+    }
+    .eg3 {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        top: 5%;
+        left: 25%;
+        animation-delay: 6s;
+        animation: slide3 30s;
+    }
+    .img {
+        position: relative;
+        top: -50%;
+        left: -50%;
+        width: 133px;
+        height: 100px;
+        animation: size 30s;
+    }
+
+
+</style>
+<body>
+    <div class="main"><p>So let's start by showing you some items that belong to the category <i>[Zizu]</i>.<br><br>Here are 3 examples of <i>[Zizu]</i></p></div>
+    <div class="eg1"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''></div>
+    <div class="eg2"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''></div>
+    <div class="eg3"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.png' alt=''></div>
+    
+</body>

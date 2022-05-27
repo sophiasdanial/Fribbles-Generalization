@@ -1,0 +1,100 @@
+<style>
+    body {
+        overflow:hidden;
+        height: 100vh
+    }
+
+    h1 {
+    position: fixed;
+    left: 10px;
+    top: 0;
+    font-size: 13px;}
+
+    .main {
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 30%;
+        left: 35%;
+        width: 70%;
+        font-size: 1em;
+        animation: appear 30s
+    }
+    @keyframes appear {
+        0% {opacity: 0;}
+        30% {opacity: 0;}
+        45% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    .cond {
+        position: fixed;
+        display: block;
+        top: 35%;
+        left: 35%;
+        animation: appear2 30s
+    }
+    @keyframes appear2 {
+        0% {opacity: 0;}
+        50% {opacity: 0;}
+        65% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+   
+    .eg1 {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        top: 5%;
+        left: 5%;
+    }
+    .eg2 {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 5%;
+        left: 15%;
+    }
+    .eg3 {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        top: 5%;
+        left: 25%;
+    }
+    .img {
+        position: relative;
+        top: -50%;
+        left: -50%;
+        width: 133px;
+        height: 100px;
+    }
+
+    .cau {
+        position: fixed;
+        z-index: 5;
+        left: 25%;
+        top: 30%;
+        width: 150px;
+        height: 150px;
+        animation: slideleft 30s
+    }
+
+    @keyframes slideleft {
+        0% {top: -100%; left: 50%}
+        30% {top: 30%; left: 50%}
+        40% {top: 30%; left: 25%}
+        100% {top: 30%; left: 25%}
+    }
+
+
+</style>
+<body>
+    <h1>Examples counter: (3)</h1>
+    <div><img class="cau"src='https://sophiasdanial.github.io/Fribbles-Generalization/images/caution.png' alt=''></div>
+    <div class="main"><p>To help facilitate your judgements, you will be presented with an array of boxes.</p></div>
+    <div class="cond"><p>The computer will help you select <strong>6</strong> of these boxes that contain further example items representing the category <i>[Zizu]</i></p></div>
+    <div class="eg1"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''></div>
+    <div class="eg2"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''></div>
+    <div class="eg3"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.png' alt=''></div>
+    
+</body>
