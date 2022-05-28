@@ -28,7 +28,7 @@ figure {
   margin:0;
   padding: 1% 0;
   max-height: 16%;
-  width: 40%;
+  width: auto;
   overflow: hidden;
   display: inline-block;
 }
