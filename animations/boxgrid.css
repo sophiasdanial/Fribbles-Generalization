@@ -8,24 +8,17 @@ body {
   }
 
   .fit {
-    margin: 0;
-    height: 80%;
+    position: fixed;
+    z-index: 2;
+    top: 15%;
+    left: 5%;
+    height: 90%;
     width: auto;
     overflow: hidden
   }
 
-  .row {
-    background: white;
-    margin: 0;
-    padding: 1em;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: left;
-
-  }
-
 figure {
-  margin:0;
+  margin:0 -1%;
   padding: 1% 0;
   max-height: 16%;
   width: auto;
@@ -45,10 +38,34 @@ transform: scale(1.15);
 }
 
 img {
-height: 100%;
+height: 70%;
 width: auto;
 margin: 0 auto;
 display: block;
 background: rgb(255, 255, 255);
 transition: transform .2s ease-in-out;
+}
+
+h1 {
+  position: fixed;
+  left: 10px;
+  top: 0;
+  font-size: 13px;
+}
+
+.row {
+  position: fixed;
+  top: 4vh;
+  left: 1vw;
+  height: 15vh;
+  width: 95vw;
+  display: flex;
+}
+
+frib {
+  display: flex;
+  width: 133px;
+  height: 100px;
+  margin: 0 auto;
+  overflow: hidden
 }
