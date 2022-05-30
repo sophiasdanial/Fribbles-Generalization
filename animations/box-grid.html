@@ -1,6 +1,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' type='text/css' href='https://sophiasdanial.github.io/Fribbles-Generalization/boxgrid.css'>
+  <link rel='stylesheet' type='text/css' href='https://sophiasdanial.github.io/Fribbles-Generalization/animations/boxgrid.css'>
 </head>
 
 <script type='text/javascript'>
@@ -9,8 +9,19 @@
   var counter = 0;
   var answersheet = new Array;
   var opened = new Array;
-  var correctboxes = 7;
+  var correctboxes = 6;
   var wrongboxes = 3;
+  var correctcounter = 0;
+  var fribpics = new Array;
+  fribpics = [
+    '1211.jpg',
+    '1131.jpg',
+    '1321.jpg',
+    '1121.jpg',
+    '1231.jpg',
+    '1311.jpg'
+  ];
+
 
   //generating answersheet
   while (correctboxes > 2){
@@ -24,16 +35,15 @@
 
   //box press - check if box is already opened and if 9 boxes already opened
   function change(buttonid) {
-	  if (opened.includes(buttonid) || counter >= 9){
-    }
+	  if (opened.includes(buttonid) || counter >= 9){}
     else {
-      document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/box-open.png";
-      opened.push(buttonid);
-      addCount();
+    opened.push(buttonid);
+      addCount(buttonid);
+      
     }
   }
 
-  function addCount() {
+  function addCount(buttonid) {
     counter += 1;
     var correct = false;
     if(counter == 1){ //opening box 1
@@ -54,53 +64,65 @@
     }
     else { //attempting to open box 10+
     }
-    document.getElementById("counter").innerHTML = counter + " " + correct + " " + opened;
     if (correct){
-      addpicture()
+      addpicture();
+      correctcounter += 1;
+      document.getElementById("counter").innerHTML = "Example counter: (" + (3 + correctcounter) + ")";
+    }
+    if (correct) {
+      document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/found.png";
+    }
+    else {
+      document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/whoops.png";
     }
   }
 
   //correct box found
   function addpicture(){
     //whatever you want to do when they open a 'correct' box
-  }
+    var fribid = "frib" + (correctcounter + 1);
+    var friblink = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_' + fribpics[correctcounter];
+    document.getElementById(fribid).src = friblink;
+    }
 
-  //9th box opened
-  function finish(){
+    function finish(){
     //whatever you want to do when they open 9 boxes
   }
+
+
+  
 </script>
 
 <body>
   
-  <h1><p id="counter">Example counter : (0)</p></h1>
+  <h1><p id="counter">Example counter : (3)</p></h1>
   <div class="row">
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.jpg' alt=''>
+      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.jpg' alt=''>
+      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.jpg' alt=''>
+      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.png' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1211.jpg' alt=''>
+      <img id="frib1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1131.jpg' alt=''>
+      <img id="frib2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1321.jpg' alt=''>
+      <img id="frib3" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1121.jpg' alt=''>
+      <img id="frib4" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1231.jpg' alt=''>
+      <img id="frib5" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
     </frib>
     <frib>
-      <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1311.jpg' alt=''>
+      <img id="frib6" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
     </frib>
   </div>
 <div class="fit">
