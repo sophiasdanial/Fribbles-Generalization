@@ -229,10 +229,7 @@ var test_stimuli = [
     {
         stimulus: test_link + "Fc1_3111.jpg",
         data: {
-            head_type: "3",
-            tail2_type: "1",
-            tail1_type: "1",
-            leg_type: "1"}
+            frib: "3111"}
         },
     {
         stimulus: test_link + "Fc1_3121.jpg",
@@ -494,10 +491,7 @@ var f2331 = jsPsych.data.get().filter({
 }).select('response').values;
 ///f31__
 var f3111 = jsPsych.data.get().filter({
-    leg_type: "3",
-    tail2_type: "1",
-    tail1_type: "1",
-    head_type: "1"
+    frib: "3111"
 }).select('response').values;
 var f3121 = jsPsych.data.get().filter({
     leg_type: "3",
