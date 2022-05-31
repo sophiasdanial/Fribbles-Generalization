@@ -62,9 +62,8 @@ display: flex;
 }
 
 frib {
-display: flex;
-width: 250px;
-height: 188px;
-margin: 0 auto;
-overflow: hidden
-}
+  display: flex;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden
+  }
