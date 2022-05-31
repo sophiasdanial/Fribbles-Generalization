@@ -160,10 +160,7 @@ var test_stimuli = [
     {
         stimulus: test_link + "Fc1_2111.jpg",
         data: {
-            head_type: "2",
-            tail2_type: "1",
-            tail1_type: "1",
-            leg_type: "1"}
+            frib: "2111"}
         },
     {
         stimulus: test_link + "Fc1_2121.jpg",
