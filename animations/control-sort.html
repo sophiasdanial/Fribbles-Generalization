@@ -15,9 +15,8 @@
         position: fixed;
         z-index: -1;
         top: 30%;
-        left: 35%;
-        width: 70%;
-        font-size: 1em;
+        left: 27%;
+        font-size: 23px;
         animation: appear 30s
     }
     @keyframes appear {
@@ -29,8 +28,9 @@
     .cond {
         position: fixed;
         display: block;
-        top: 35%;
-        left: 35%;
+        font-size: 23px;
+        top: 40%;
+        left: 27%;
         animation: appear2 30s
     }
     @keyframes appear2 {
@@ -69,28 +69,38 @@
         height: 100px;
     }
 
-    .cau {
+    .yellowbox {
         position: fixed;
         z-index: 5;
-        left: 25%;
+        left: 15%;
         top: 30%;
-        width: 150px;
-        height: 150px;
-        animation: slideleft 30s
+        animation: caution 30s
+    }
+    @keyframes caution {
+        0% {opacity: 0; top: 30%; left: 50%}
+        10% {opacity: 1; top: 30%; left: 50%}
+        30% {opacity: 1; top: 30%; left: 50%}
+        40% {opacity: 1;top: 30%; left: 15%}
+        100% {opacity: 1;top: 30%; left: 15%}
     }
 
-    @keyframes slideleft {
-        0% {top: -100%; left: 50%}
-        30% {top: 30%; left: 50%}
-        40% {top: 30%; left: 25%}
-        100% {top: 30%; left: 25%}
+    .cau {
+        width: 200px;
+        height: 200px;
+        animation: pulse 1.5s infinite
+    }
+
+    @keyframes pulse {
+        0% {transform:scale(.9);}
+        70% {transform:scale(1);}
+        100% {transform:scale(.9);}
     }
 
 
 </style>
 <body>
     <h1>Examples counter: (3)</h1>
-    <div><img class="cau"src='https://sophiasdanial.github.io/Fribbles-Generalization/images/caution.png' alt=''></div>
+    <div class="yellowbox"><img class="cau"src='https://sophiasdanial.github.io/Fribbles-Generalization/images/caution.png' alt=''></div>
     <div class="main"><p>To help facilitate your judgements, you will be presented with an array of boxes.</p></div>
     <div class="cond"><p>The computer will help you select <strong>6</strong> of these boxes that contain further example items representing the category <i>[Zizu]</i></p></div>
     <div class="eg1"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''></div>

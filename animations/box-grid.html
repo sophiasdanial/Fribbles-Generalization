@@ -67,7 +67,7 @@
     if (correct){
       addpicture();
       correctcounter += 1;
-      document.getElementById("counter").innerHTML = "Example counter: (" + (3 + correctcounter) + ")";
+      document.getElementById("counter").innerHTML = "You have" + (3 + correctcounter) + "<i>[Zizu]</i> examples";
     }
     if (correct) {
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/found.png";
@@ -76,6 +76,11 @@
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/whoops.png";
     }
   }
+
+  function test() {
+    document.getElementById("box1").src= "https://sophiasdanial.github.io/Fribbles-Generalization/images/found.png";
+  }
+
 
   //correct box found
   function addpicture(){
@@ -95,7 +100,7 @@
 
 <body>
   
-  <h1><p id="counter">Example counter : (3)</p></h1>
+  <h1><p id="counter">You have <span style="color:red">3</span> <i>[Zizu]</i> examples</p></h1>
   <div class="row">
     <frib>
       <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
@@ -127,7 +132,7 @@
   </div>
 <div class="fit">
     <figure>
-      <img onclick="change('box1')" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+      <img onclick="test()" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
     </figure>
     <figure>
       <img onclick="change('box2')" id="box2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>

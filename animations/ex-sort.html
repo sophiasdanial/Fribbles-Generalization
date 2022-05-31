@@ -15,8 +15,8 @@
         position: fixed;
         z-index: -1;
         top: 30%;
-        left: 35%;
-        font-size: 1em;
+        left: 27%;
+        font-size: 23px;
         animation: appear 30s
     }
     @keyframes appear {
@@ -28,8 +28,9 @@
     .cond {
         position: fixed;
         display: block;
+        font-size: 23px;
         top: 35%;
-        left: 35%;
+        left: 27%;
         animation: appear2 30s
     }
     @keyframes appear2 {
@@ -40,14 +41,31 @@
     }
     .cond2 {
         position: fixed;
-        display: block;
+        display: inline-block;
+        text-align: center;
+        font-size: 23px;
         top: 40%;
-        left: 35%;
+        left: 27%;
         animation: appear3 30s
     }
     @keyframes appear3 {
         0% {opacity: 0;}
-        90% {opacity: 0;}
+        75% {opacity: 0;}
+        85% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+
+    .cond3 {
+        position: fixed;
+        display: block;
+        font-size: 23px;
+        top: 45%;
+        left: 27%;
+        animation: appear4 30s
+    }
+    @keyframes appear4 {
+        0% {opacity: 0;}
+        95% {opacity: 0;}
         100% {opacity: 1;}
     }
    
@@ -83,32 +101,43 @@
         height: 100px;
         
     }
-
-    .cau {
+    .yellowbox {
         position: fixed;
         z-index: 5;
-        left: 25%;
+        left: 15%;
         top: 30%;
-        width: 150px;
-        height: 150px;
-        animation: slideleft 30s
+        animation: caution 30s
+    }
+    @keyframes caution {
+        0% {opacity: 0; top: 30%; left: 50%}
+        10% {opacity: 1; top: 30%; left: 50%}
+        30% {opacity: 1; top: 30%; left: 50%}
+        40% {opacity: 1;top: 30%; left: 15%}
+        100% {opacity: 1;top: 30%; left: 15%}
     }
 
-    @keyframes slideleft {
-        0% {top: -100%; left: 50%}
-        30% {top: 30%; left: 50%}
-        40% {top: 30%; left: 25%}
-        100% {top: 30%; left: 25%}
+    .cau {
+        width: 200px;
+        height: 200px;
+        animation: pulse 1.5s infinite
     }
 
+    @keyframes pulse {
+        0% {transform:scale(.9);}
+        70% {transform:scale(1);}
+        100% {transform:scale(.9);}
+    }
+
+    
 
 </style>
 <body>
     <h1>Examples counter: (3)</h1>
-    <div><img class="cau"src='https://sophiasdanial.github.io/Fribbles-Generalization/images/caution.png' alt=''></div>
+    <div class="yellowbox"><img class="cau"src='https://sophiasdanial.github.io/Fribbles-Generalization/images/caution.png' alt=''></div>
     <div class="main"><p>To help facilitate your judgements, you will be presented with an array of boxes.</p></div>
-    <div class="cond"><p>These boxes <i>may</i> or <i>may not</i> contain an accurate example item belonging to the category <i>[Zizu]</i></p></div>
-    <div class="cond2"><p>Feel free to select up to <strong>9</strong> boxes to see if you can find anymore further example items belonging to the category <i>[Zizu]</i></p></div>
+    <div class="cond"><p>Some boxes contain an accurate example item belonging to the category <i>[Zizu]</i></p></div>
+    <div class="cond2"><p>However, some are <strong>empty</strong>!</p></div>
+    <div class="cond3"><p>Select up to <strong>9</strong> boxes to see if you can find anymore further example items belonging to the category <i>[Zizu]</i></p></div>
     <div class="eg1"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''></div>
     <div class="eg2"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''></div>
     <div class="eg3"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.png' alt=''></div>

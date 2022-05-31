@@ -11,83 +11,84 @@
 <script src='https://sophiasdanial.github.io/jsPsych-Navon-Task/js/jspsych/plugins/jspsych-html-keyboard-response.js'></script>
 <script src='https://sophiasdanial.github.io/jsPsych-Navon-Task/js/jspsych/plugins/jspsych-image-slider-response.js'></script>
 <script src="https://sophiasdanial.github.io/jsPsych-Navon-Task/js/jspsych/plugins/jspsych-preload.js"></script>
-<script src="/Users/sophiastudent/Desktop/Dissertation/Qualtrics files/Testing Container/Fribbles-Task.js"></script>
+<script src="https://sophiasdanial.github.io/Fribbles-Generalization/Fribbles-test/Fribbles-Task.js"></script>
+
 <style>
+  #display_stage_background {
+      width: 100vw;
+      background-color: white;
+    }
+  
+    #display_stage {
+      position: fixed;
+      z-index: -1;
+      left: 1vw;
+      top: 17vh;
+      bottom: 1vh;
+      width: 98vw;
+      height: 75vh;
+      background-color: transparent;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+  
+    h1 {
+      position: fixed;
+      left: 2%;
+      top: 1%;
+      font-size: 20px;
+    }
+  
+    .row {
+      position: fixed;
+      top: 4vh;
+      left: 1vw;
+      height: 30vh;
+      width: 96vw;
+      display: flex;
+    }
+  
+    frib {
+      display: block;
+      margin: 0 auto;
+      overflow: hidden
+    }
 
-#display_stage_background {
-    width: 100vw;
-    background-color: white;
-  }
-
-  #display_stage {
-    position: fixed;
-    left: 1vw;
-    top: 17vh;
-    bottom: 1vh;
-    width: 98vw;
-    height: 75vh;
-    background-color: white;
-    border-radius: 15px;
-    z-index: 0;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-
-  h1 {
-    position: fixed;
-    left: 10px;
-    top: 0;
-    font-size: 13px;
-  }
-
-  .row {
-    position: fixed;
-    top: 4vh;
-    left: 1vw;
-    height: 15vh;
-    width: 95vw;
-    display: flex;
-  }
-
-  frib {
-    display: flex;
-    width: 133px;
-    height: 100px;
-    margin: 0 auto;
-    overflow: hidden
-  }
-
-</style>
+    .size {
+      width: 250px;
+      height: 188px;
+    }
+  </style>
 
 <div id='display_stage_background'>
 <h1>Example counter: (9)</h1>
 <div class="row">
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1331.png' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1211.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1211.jpg' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1131.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1131.jpg' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1321.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1321.jpg' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1121.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1121.jpg' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1231.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1231.jpg' alt=''>
   </frib>
   <frib>
-    <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1311.jpg' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1311.jpg' alt=''>
   </frib>
 </div>
 </div>
