@@ -440,10 +440,7 @@ var f1333 = jsPsych.data.get().filter({
 }).select('response').values;
 ///f21__
 var f2111 = jsPsych.data.get().filter({
-    leg_type: "2",
-    tail2_type: "1",
-    tail1_type: "1",
-    head_type: "1"
+    frib: "2111"
 }).select('response').values;
 var f2121 = jsPsych.data.get().filter({
     leg_type: "2",
