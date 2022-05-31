@@ -87,13 +87,19 @@
       position: fixed;
       left: 2%;
       top: 1%;
-      font-size: 20px;
+      font-size: 15px;
+      animation: appear 30s;
+    }
+    @keyframes appear {
+        0% {opacity: 0}
+        95% {opacity: 0}
+        100% {opacity: 1}
     }
 
 
 </style>
 <body>
-    <h1>You have ( 3 ) <i>[Zizu]</i> examples</h1>
+    <h1>You have <span style="color:red">3</span> <i>[Zizu]</i> examples</h1>
     <div class="main"><p>So let's start by showing you some items that belong to the category <i>[Zizu]</i>.<br><br>Here are 3 examples of <i>[Zizu]</i></p></div>
     <div class="eg1"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''></div>
     <div class="eg2"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''></div>

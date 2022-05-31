@@ -4,33 +4,33 @@ body {
   pointer-events: none;
 }
 
- div {
-   font-size: 0;
-  }
+div {
+  font-size: 0;
+}
 
-  .fit {
-    position: fixed;
-    z-index: 2;
-    top: 15%;
-    left: 5%;
-    height: 90%;
-    width: auto;
-    overflow: hidden
-  }
+.fit {
+ position: fixed;
+ z-index: 2;
+ top: 20%;
+ left: 5%;
+ height: 85%;
+ width: auto;
+ overflow: hidden
+}
 
 figure {
-  margin:0 -1%;
-  padding: 1% 0;
-  max-height: 16%;
-  width: auto;
-  overflow: hidden;
-  display: inline-block;
+margin:0 -1%;
+padding: 1% 0;
+max-height: 16%;
+width: auto;
+overflow: hidden;
+display: inline-block;
 }
 
 @media screen and (min-width:50em) {
 figure {
-  width: calc(17% - 6px);
-  height: calc(17%-6px)
+width: calc(17% - 6px);
+height: calc(17%-6px)
 }
 
 }
@@ -43,31 +43,29 @@ height: 70%;
 width: auto;
 margin: 0 auto;
 display: block;
-background: rgb(255, 255, 255);
 transition: transform .2s ease-in-out;
 }
 
 h1 {
-  position: fixed;
-  z-index: 6;
-  left: 10px;
-  top: 0;
-  font-size: 13px;
+position: fixed;
+left: 2%;
+top: 0;
+font-size: 15px;
 }
 
 .row {
-  position: fixed;
-  top: 4vh;
-  left: 1vw;
-  height: 15vh;
-  width: 95vw;
-  display: flex;
+position: fixed;
+top: 4vh;
+left: 1vw;
+height: 30vh;
+width: 96vw;
+display: flex;
 }
 
 frib {
-  display: flex;
-  width: 133px;
-  height: 100px;
-  margin: 0 auto;
-  overflow: hidden
+display: flex;
+width: 250px;
+height: 188px;
+margin: 0 auto;
+overflow: hidden
 }

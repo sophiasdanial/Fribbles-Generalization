@@ -1,6 +1,6 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' type='text/css' href='https://sophiasdanial.github.io/Fribbles-Generalization/animations/boxgrid.css'>
+  <link rel='stylesheet' type='text/css' href='https://sophiasdanial.github.io/Fribbles-Generalization/animations/boxgrid-UC.css'>
 </head>
 
 <script type='text/javascript'>
@@ -67,7 +67,7 @@
     if (correct){
       addpicture();
       correctcounter += 1;
-      document.getElementById("counter").innerHTML = "You have " + (3 + correctcounter) + " <i>[Zizu]</i> examples. " + (6 - correctcounter) + " to go!";
+      document.getElementById("counter").innerHTML = (3 + correctcounter) + (6 - correctcounter);
     }
     if (correct) {
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/found.png";
@@ -100,7 +100,7 @@
 
 <body>
   
-  <h1><p id="counter">You have <span style="color:red">3</span> <i>[Zizu]</i> examples</p></h1>
+  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples</p></h1>
   <div class="row">
     <frib>
       <img src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
