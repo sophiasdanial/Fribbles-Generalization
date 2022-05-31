@@ -41,6 +41,7 @@ transition: transform .2s ease-in-out;
 
 h1 {
 position: fixed;
+z-index: 3;
 left: 2%;
 top: 0;
 font-size: 15px;
