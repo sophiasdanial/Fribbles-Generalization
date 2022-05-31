@@ -8,32 +8,25 @@ div {
   font-size: 0;
 }
 
-.fit {
+.grid {
  position: fixed;
  z-index: 2;
- top: 20%;
- left: 5%;
- height: 85%;
- width: auto;
+ top: 25%;
+ left: 20%;
+ height: 88%;
+ width: 60%;
  overflow: hidden
 }
 
 figure {
-margin:0 -1%;
-padding: 1% 0;
+margin:0.7% -1.5%;
+padding: 0.5%;
 max-height: 16%;
-width: auto;
+width: 18%;
 overflow: hidden;
 display: inline-block;
 }
 
-@media screen and (min-width:50em) {
-figure {
-width: calc(17% - 6px);
-height: calc(17%-6px)
-}
-
-}
 figure:hover img {
 transform: scale(1.15);
 }
@@ -51,6 +44,13 @@ position: fixed;
 left: 2%;
 top: 0;
 font-size: 15px;
+}
+
+.fribbles {
+ height: auto;
+ width: auto;
+ margin: 0 auto;
+ display: block;
 }
 
 .row {
