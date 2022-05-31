@@ -73,6 +73,17 @@ overflow: hidden
 #cursor {
   position: fixed;
   z-index: 6;
+  top: 120%;
   right: 5%;
-  width: 100px;
+  height: 75px;
+  animation: cursor 30s;
+}
+@keyframes cursor {
+  0% {top: 120%; right: 5%}
+  17% {top: 55%; right: 26%}
+  34% {top: 45%; right: 35%}
+  50% {top: 55%; right: 45%}
+  67% {top: 55%; right: 55%}
+  84% {top: 70%; right: 65%}
+  100% {top: 55%; right: 75%}
 }
