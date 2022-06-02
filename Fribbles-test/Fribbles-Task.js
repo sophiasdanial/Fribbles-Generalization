@@ -12,6 +12,7 @@ timeline.push(preload)
 
 /////// List stimuli /////////
 // note - test stimuli contains either Head 1 or Leg 1
+//*huge issue with f2111 and f3111; unable to recognise data combination. Rewritten to have unique identifiers
 var test_stimuli = [
     {
     stimulus: test_link + "Fc1_1112.jpg",
