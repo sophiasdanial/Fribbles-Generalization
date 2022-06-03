@@ -49,8 +49,7 @@ font-size: 15px;
   height: auto;
   width: auto;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap
+  display: block;
 }
 
 .row {
@@ -63,7 +62,8 @@ display: flex;
 }
 
 frib {
-  display: block;
+  display: flex;
+  flex-wrap:wrap;
   margin: 0 auto;
   overflow: hidden
   }
