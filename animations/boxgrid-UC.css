@@ -10,7 +10,7 @@ div {
 .grid {
   position: fixed;
   z-index: 2;
-  top: 25%;
+  top: 24%;
   left: 20%;
   height: 88%;
   width: 60%;
@@ -45,25 +45,24 @@ top: 0;
 font-size: 15px;
 }
 
-.fribbles {
-  height: auto;
-  width: auto;
-  margin: 0 auto;
-  display: block;
-}
-
 .row {
 position: fixed;
 top: 4vh;
 left: 1vw;
-height: 30vh;
+height: 24vh;
 width: 96vw;
 display: flex;
 }
 
 frib {
-  display: flex;
-  flex-wrap:wrap;
+  display: block;
   margin: 0 auto;
   overflow: hidden
   }
+
+.fribbles {
+  max-height: 25vh;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap
+}
