@@ -1,5 +1,5 @@
 body {
-  width: 90%;
+  width: 100%;
   margin: auto;
   pointer-events: none;
 }
@@ -9,13 +9,13 @@ div {
 }
 
 .grid {
- position: fixed;
- z-index: 2;
- top: 25%;
- left: 20%;
- height: 88%;
- width: 60%;
- overflow: hidden
+  position: fixed;
+  z-index: 2;
+  top: 24%;
+  left: 20%;
+  height: 88%;
+  width: 60%;
+  overflow: hidden
 }
 
 figure {
@@ -40,34 +40,31 @@ transition: transform .2s ease-in-out;
 }
 
 h1 {
-position: fixed;
-z-index: 3;
-left: 2%;
-top: 0;
-font-size: 15px;
-}
-
-.fribbles {
- height: auto;
- width: auto;
- margin: 0 auto;
- display: block;
-}
-
+  position: fixed;
+  left: 2%;
+  top: 0;
+  font-size: 15px;
+  }
+  
 .row {
 position: fixed;
-top: 4vh;
+top: 7vh;
 left: 1vw;
-height: 30vh;
+height: 25vh;
 width: 96vw;
 display: flex;
 }
-
+  
 frib {
-display: flex;
-height: 150px;
-margin: 0 auto;
-overflow: hidden
+  display: block;
+  height: auto;
+  margin: 0 auto;
+  }
+
+.fribbles {
+  max-height: 27vh;
+  width: auto;
+  display: flex;
 }
 
 #cursor {
