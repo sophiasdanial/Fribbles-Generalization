@@ -7,7 +7,7 @@ var preload = {
     show_progress_bar: true,
     message: 'Loading images... Please wait',
     images: [
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/1000pxslidrmarkings.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/1000pxslidermarkings.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1112.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1113.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1122.jpg',
@@ -341,7 +341,7 @@ var testchoice= {
     stimulus: jsPsych.timelineVariable('stimulus'),
     data: jsPsych.timelineVariable('data'),
     prompt: '<p>How likely is this item from the category <i>[Zizu]</i>?</p>',
-    labels: ['0%', '100%'],
+    labels: ['0', '100'],
     slider_width: 1000,
     button_label: 'Continue',
 };
