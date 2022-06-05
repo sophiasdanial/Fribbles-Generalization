@@ -7,6 +7,7 @@ var preload = {
     show_progress_bar: true,
     message: 'Loading images... Please wait',
     images: [
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/1000pxslidrmarkings.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1112.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1113.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1122.jpg',
