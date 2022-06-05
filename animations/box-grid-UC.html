@@ -61,6 +61,7 @@
     else if (counter == 9){ //opening box 9
       correct = true;
       finish();
+      document.getElementById("buttonapp").innerHTML = "...Please wait for the 'next' button to appear";
     }
     else { //attempting to open box 10+
     }
@@ -68,7 +69,6 @@
       addpicture();
       correctcounter += 1;
       document.getElementById("counter").innerHTML = (3 + correctcounter);
-      document.getElementById("ncounter").innerHTML = (6 - correctcounter);
     }
     if (correct) {
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/found.png";
@@ -76,6 +76,7 @@
     else {
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/whoops.png";
     }
+    document.getElementById("ncounter").innerHTML = (9 - counter);
   }
 
   function test() {
@@ -101,7 +102,7 @@
 
 <body>
   
-  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. You have <span id="ncounter" style="color:red">6</span> more examples to find!</p></h1>
+  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. You have <span id="ncounter" style="color:red">9</span> more chances to find a <i>[Zizu]</i>! <span id="buttonapp" style="color:red">...</span></p></h1>
   <div class="row">
     <frib>
       <img class="fribbles" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
