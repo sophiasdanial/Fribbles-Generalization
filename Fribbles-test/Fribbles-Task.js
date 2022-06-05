@@ -342,7 +342,7 @@ var testchoice= {
     data: jsPsych.timelineVariable('data'),
     prompt: '<p>How likely is this item from the category <i>[Zizu]</i>?</p>',
     labels: ['0', '100'],
-    slider_width: 1000,
+    slider_width: 1002,
     button_label: 'Continue',
 };
 
