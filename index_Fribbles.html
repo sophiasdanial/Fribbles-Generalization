@@ -4,7 +4,7 @@
 <head>
   <title>Fribbles Task</title>
   
-  <link rel="stylesheet" href="https://sophiasdanial.github.io/jsPsych-Navon-Task/css/jspsych.css"></link>
+  <link rel="stylesheet" href="/Users/sophiastudent/Documents/GitHub/gg-testing/css/jspsych.css"></link>
 </head>
 <body>
 <script src="https://sophiasdanial.github.io/jsPsych-Navon-Task/js/jspsych/jspsych.js"></script>
@@ -35,8 +35,8 @@
     h1 {
       position: fixed;
       left: 2%;
-      top: 1%;
-      font-size: 20px;
+      top: 0%;
+      font-size: 15px;
     }
   
     .row {
@@ -55,13 +55,14 @@
     }
 
     .size {
-      width: 250px;
-      height: 188px;
+      max-height: 29vh;
+      width: auto;
+      display: flex;
     }
-  </style>
+</style>
 
 <div id='display_stage_background'>
-<h1>Example counter: (9)</h1>
+<h1>You have <span style="color:red">9</span>  <i>[Zizu]</i> examples</h1>
 <div class="row">
   <frib>
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
