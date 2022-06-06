@@ -61,8 +61,7 @@ frib {
   }
 
 .fribbles {
-  max-height: 15vh;
-  min-height: 11vh;
+  min-height: 15vh;
   width: auto;
   display: flex;
 }
