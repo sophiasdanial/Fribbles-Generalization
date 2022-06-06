@@ -20,8 +20,8 @@ div {
 figure {
 margin:0.7% -1.5%;
 padding: 0.5%;
-max-height: 27vh;
-width: auto;
+max-height: 16%;
+width: 18%;
 overflow: hidden;
 display: inline-block;
 }
@@ -31,7 +31,7 @@ transform: scale(1.15);
 }
 
 img {
-height: 10vh;
+height:10vh;
 width: auto;
 margin: 0 auto;
 display: block;
@@ -47,21 +47,22 @@ font-size: 15px;
 
 .row {
 position: fixed;
-top: 7vh;
+top: 4vh;
 left: 1vw;
-height: 25vh;
+height: 20vh;
 width: 96vw;
 display: flex;
 }
 
 frib {
   display: block;
-  height: auto;
+  height: 20vh;
   margin: 0 auto;
   }
 
 .fribbles {
-  max-height: 27vh;
+  max-height: 15vh;
+  min-height: 11vh;
   width: auto;
   display: flex;
 }
