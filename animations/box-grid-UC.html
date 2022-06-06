@@ -62,6 +62,7 @@
       correct = true;
       finish();
       document.getElementById("buttonapp").innerHTML = "...Please wait for the 'next' button to appear";
+      document.getElementById("timer").style = "color:red";
     }
     else { //attempting to open box 10+
     }
@@ -79,11 +80,8 @@
     document.getElementById("ncounter").innerHTML = (9 - counter);
   }
 ///// timer 
-document.getElementById("timer").textContent = 01 + ":" + 25;
-startTimer();
-
 function startTimer() {
-  var presentTime = document.getElementById("timer").textContent;
+  var presentTime = document.getElementById("timer").innerHTML;
   var timeArray = presentTime.split(/[:]+/);
   var m = timeArray[0];
   var s = checkSecond((timeArray[1] - 1));
@@ -91,7 +89,7 @@ function startTimer() {
   if(m<0){
     return
   }
-  document.getElementById("timer").textContent =
+  document.getElementById("timer").innerHTML =
     m + ":" + s;
   console.log(m)
   setTimeout(startTimer, 1000);
@@ -114,14 +112,12 @@ function addpicture(){
   function finish(){
   //whatever you want to do when they open 9 boxes
 }
-
-
   
 </script>
 
-<body>
+<body onload="startTimer()">
   
-  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. You have <span id="ncounter" style="color:red">9</span> more chances to find a <i>[Zizu]</i>! <span id="buttonapp" style="color:red"></span><span id="timer"></span></p></h1>
+  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. You have <span id="ncounter" style="color:red">9</span> more chances to find a <i>[Zizu]</i>! <span id="buttonapp" style="color:red"></span> <span id="timer" style="color:white">00:30</span></p></h1>
   <div class="row">
     <frib>
       <img class="fribbles" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1221.png' alt=''>
@@ -153,7 +149,7 @@ function addpicture(){
   </div>
 <div class="grid">
     <figure>
-      <img onclick="test()" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+      <img onclick="change('box1')" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
     </figure>
     <figure>
       <img onclick="change('box2')" id="box2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
