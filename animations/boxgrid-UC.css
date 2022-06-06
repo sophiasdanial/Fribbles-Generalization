@@ -20,8 +20,8 @@ div {
 figure {
 margin:0.7% -1.5%;
 padding: 0.5%;
-max-height: 16%;
-width: 18%;
+max-height: 27vh;
+width: auto;
 overflow: hidden;
 display: inline-block;
 }
