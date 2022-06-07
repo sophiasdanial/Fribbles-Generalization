@@ -193,7 +193,7 @@ var testchoice= {
     type: 'image-slider-response',
     stimulus: jsPsych.timelineVariable('stimulus'),
     data: jsPsych.timelineVariable('data'),
-    prompt: '<p>How likely is this item from the category <i>[Zizu]</i>?</p>',
+    prompt: '<p style="margin:0px">How likely is this item from the category <i>[Zizu]</i>?</p>',
     labels: ['0', '100'],
     slider_width: 1002,
     button_label: 'continue',

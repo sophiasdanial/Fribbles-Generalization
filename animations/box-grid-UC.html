@@ -33,13 +33,13 @@
     wrongboxes -= 1;
   }
 
+
   //box press - check if box is already opened and if 9 boxes already opened
   function change(buttonid) {
 	  if (opened.includes(buttonid) || counter >= 9){}
     else {
     opened.push(buttonid);
       addCount(buttonid);
-      
     }
   }
 
@@ -112,7 +112,6 @@ function addpicture(){
   function finish(){
   //whatever you want to do when they open 9 boxes
 }
-  
 </script>
 
 <body onload="startTimer()">

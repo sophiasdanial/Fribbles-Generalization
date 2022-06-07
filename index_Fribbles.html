@@ -24,9 +24,9 @@
       z-index: 2;
       left: 1vw;
       top: 17vh;
-      bottom: 1vh;
+      bottom: 0vh;
       width: 98vw;
-      height: 75vh;
+      height: 80vh;
       background-color: transparent;
       overflow-y: hidden;
       overflow-x: hidden;
@@ -102,6 +102,7 @@
   jsPsych.init({
     timeline: timeline,
     show_progress_bar: true,
+    auto_update_progress_bar: false,
     display_element: 'display_stage',
     on_finish: function (data) {
       jsPsych.data.displayData('csv');
