@@ -101,7 +101,7 @@
   /*start experiment*/
   jsPsych.init({
     timeline: timeline,
-    override_safe_mode: true,
+    show_progress_bar: true,
     display_element: 'display_stage',
     on_finish: function (data) {
       jsPsych.data.displayData('csv');
