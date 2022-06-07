@@ -26,21 +26,21 @@
         20% {top:50%; left:110%;}
         35% {top:50%; left:25%;}
         85% {top:50%; left:25%;}
-        100% {top:5%; left:5%;}
+        100% {top:5%; left:7%;}
     }
     @keyframes slide2 {
         0% {top:50%; left:110%;}
         35% {top:50%; left:110%;}
         50% {top:50%; left:50%;}
         85% {top:50%; left:50%;}
-        100% {top:5%; left:15%;}
+        100% {top:5%; left:24%;}
     }
     @keyframes slide3 {
         0% {top:50%; left:110%;}
         50% {top:50%; left:110%;}
         70% {top:50%; left:75%;}
         85% {top:50%; left:75%;}
-        100% {top:5%; left:25%;}
+        100% {top:5%; left:41%;}
     }
     @keyframes size {
         0% {width: 400px; height: 300px;}
@@ -53,7 +53,7 @@
         position: fixed;
         z-index: 1;
         top: 5%;
-        left: 5%;
+        left: 7%;
         animation-delay: 6s;
         animation: slide1 30s;
     }
@@ -62,7 +62,7 @@
         position: fixed;
         z-index: 2;
         top: 5%;
-        left: 15%;
+        left: 24%;
         animation-delay: 6s;
         animation: slide2 30s;
     }
@@ -71,7 +71,7 @@
         position: fixed;
         z-index: 3;
         top: 5%;
-        left: 25%;
+        left: 41%;
         animation-delay: 6s;
         animation: slide3 30s;
     }
@@ -79,8 +79,9 @@
         position: relative;
         top: -50%;
         left: -50%;
-        width: 250px;
-        height: 188px;
+        display: flex;
+        width: auto;
+        max-height: 29vh;
         animation: size 30s;
     }
     h1 {
