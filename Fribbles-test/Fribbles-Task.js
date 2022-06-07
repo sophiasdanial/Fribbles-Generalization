@@ -1,6 +1,7 @@
 //* based on jsPsych v6.x 
 /* Fribbles Task */
 var timeline = [];
+var trial_count = 72;
 var test_link = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/'
 var preload = {
     type: 'preload',
@@ -196,6 +197,10 @@ var testchoice= {
     labels: ['0', '100'],
     slider_width: 1002,
     button_label: 'continue',
+    on_finish: function() {
+        var curr_progress_bar_value = jsPsych.getProgressBarCompleted();
+        jsPsych.setProgressBar(curr_progress_bar_value + (1/trial_count));
+    }
 };
 
 var testblock = {
