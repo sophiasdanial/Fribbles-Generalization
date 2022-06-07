@@ -22,7 +22,7 @@ var testchoice= {
     type: 'image-slider-response',
     stimulus: jsPsych.timelineVariable('stimulus'),
     prompt: '<p>How likely is this item from the category <i>[beeba]</i>?</p>',
-    labels: ['Very Unlikely', 'Very Likely'],
+    labels: ['0', '100'],
     slider_width: 1000,
     button_label: 'Continue',
 };
