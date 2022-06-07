@@ -243,8 +243,8 @@ var f1332 = jsPsych.data.get().filter({ftype: "1332"}).select('response').values
 var f1333 = jsPsych.data.get().filter({ftype: "1333"}).select('response').values;
 ///f211_
 var f2111 = jsPsych.data.get().filter({ftype: "2111"}).select('response').values;
-var f2121 = jsPsych.data.get().filter({ftype: "2121"}).select('response').values;
-var f2131 = jsPsych.data.get().filter({ftype: "2131"}).select('response').values;
+var f2112 = jsPsych.data.get().filter({ftype: "2112"}).select('response').values;
+var f2113 = jsPsych.data.get().filter({ftype: "2113"}).select('response').values;
 ///f212_
 var f2121 = jsPsych.data.get().filter({ftype: "2121"}).select('response').values;
 var f2122 = jsPsych.data.get().filter({ftype: "2122"}).select('response').values;
