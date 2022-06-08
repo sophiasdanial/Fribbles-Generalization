@@ -49,7 +49,7 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2231.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2232.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2233.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2311.jpg',,
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2311.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2313.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2321.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2322.jpg',
