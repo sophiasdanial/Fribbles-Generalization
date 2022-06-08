@@ -11,24 +11,29 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/1000pxslidermarkings.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1112.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1113.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1121.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1122.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1123.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1131.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1132.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1133.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1212.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1211.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1213.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1221.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1222.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1223.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1231.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1232.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1233.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1311.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1312.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1313.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1321.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1322.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1323.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1331.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1332.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1333.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2111.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2112.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2113.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2121.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2122.jpg',
@@ -36,7 +41,6 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2131.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2132.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2133.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2211.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2212.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2213.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2221.jpg',
@@ -45,8 +49,7 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2231.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2232.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2233.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2311.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2312.jpg',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2311.jpg',,
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2313.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2321.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2322.jpg',
@@ -56,7 +59,6 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2333.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3111.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3112.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3113.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3121.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3122.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3123.jpg',
@@ -65,14 +67,12 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3133.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3211.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3212.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3213.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3221.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3222.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3223.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3231.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3232.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3233.jpg',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3311.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3312.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3313.jpg',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3321.jpg',
@@ -91,32 +91,36 @@ var test_stimuli = [
     {stimulus: test_link + "Fc1_1112.jpg", data: {ftype: "1112"}},
     {stimulus: test_link + "Fc1_1113.jpg", data: {ftype: "1113"}},
     //112
+    {stimulus: test_link + "Fc1_1121.jpg", data: {ftype: "1121"}},
     {stimulus: test_link + "Fc1_1122.jpg", data: {ftype: "1122"}},
     {stimulus: test_link + "Fc1_1123.jpg", data: {ftype: "1123"}},
     //113
+    {stimulus: test_link + "Fc1_1131.jpg", data: {ftype: "1131"}},
     {stimulus: test_link + "Fc1_1132.jpg", data: {ftype: "1132"}},
     {stimulus: test_link + "Fc1_1133.jpg", data: {ftype: "1133"}},
     //121
-    {stimulus: test_link + "Fc1_1212.jpg", data: {ftype: "1212"}},
+    {stimulus: test_link + "Fc1_1211.jpg", data: {ftype: "1211"}},
     {stimulus: test_link + "Fc1_1213.jpg", data: {ftype: "1213"}},
     //122
+    {stimulus: test_link + "Fc1_1221.jpg", data: {ftype: "1221"}},
     {stimulus: test_link + "Fc1_1222.jpg", data: {ftype: "1222"}},
     {stimulus: test_link + "Fc1_1223.jpg", data: {ftype: "1223"}},
     //123
     {stimulus: test_link + "Fc1_1232.jpg", data: {ftype: "1232"}},
     {stimulus: test_link + "Fc1_1233.jpg", data: {ftype: "1233"}},
     //131
+    {stimulus: test_link + "Fc1_1311.jpg", data: {ftype: "1311"}},
     {stimulus: test_link + "Fc1_1312.jpg", data: {ftype: "1312"}},
-    {stimulus: test_link + "Fc1_1313.jpg", data: {ftype: "1313"}},
     //132
+    {stimulus: test_link + "Fc1_1321.jpg", data: {ftype: "1321"}},
     {stimulus: test_link + "Fc1_1322.jpg", data: {ftype: "1322"}},
     {stimulus: test_link + "Fc1_1323.jpg", data: {ftype: "1323"}},
     //133
+    {stimulus: test_link + "Fc1_1331.jpg", data: {ftype: "1331"}},
     {stimulus: test_link + "Fc1_1332.jpg", data: {ftype: "1332"}},
     {stimulus: test_link + "Fc1_1333.jpg", data: {ftype: "1333"}},
     //////////
     {stimulus: test_link + "Fc1_2111.jpg", data: {ftype: "2111"}},
-    {stimulus: test_link + "Fc1_2112.jpg", data: {ftype: "2112"}},
     {stimulus: test_link + "Fc1_2113.jpg", data: {ftype: "2113"}},
     //212
     {stimulus: test_link + "Fc1_2121.jpg", data: {ftype: "2121"}},
@@ -127,7 +131,6 @@ var test_stimuli = [
     {stimulus: test_link + "Fc1_2132.jpg", data: {ftype: "2132"}},
     {stimulus: test_link + "Fc1_2133.jpg", data: {ftype: "2133"}},
     //221
-    {stimulus: test_link + "Fc1_2211.jpg", data: {ftype: "2211"}},
     {stimulus: test_link + "Fc1_2212.jpg", data: {ftype: "2212"}},
     {stimulus: test_link + "Fc1_2213.jpg", data: {ftype: "2213"}},
     //222
@@ -140,7 +143,6 @@ var test_stimuli = [
     {stimulus: test_link + "Fc1_2233.jpg", data: {ftype: "2233"}},
     //231
     {stimulus: test_link + "Fc1_2311.jpg", data: {ftype: "2311"}},
-    {stimulus: test_link + "Fc1_2312.jpg", data: {ftype: "2312"}},
     {stimulus: test_link + "Fc1_2313.jpg", data: {ftype: "2313"}},
     //232
     {stimulus: test_link + "Fc1_2321.jpg", data: {ftype: "2321"}},
@@ -153,7 +155,6 @@ var test_stimuli = [
     //////////
     {stimulus: test_link + "Fc1_3111.jpg", data: {ftype: "3111"}},
     {stimulus: test_link + "Fc1_3112.jpg", data: {ftype: "3112"}},
-    {stimulus: test_link + "Fc1_3113.jpg", data: {ftype: "3113"}},
     //312
     {stimulus: test_link + "Fc1_3121.jpg", data: {ftype: "3121"}},
     {stimulus: test_link + "Fc1_3122.jpg", data: {ftype: "3122"}},
@@ -165,7 +166,6 @@ var test_stimuli = [
     //321
     {stimulus: test_link + "Fc1_3211.jpg", data: {ftype: "3211"}},
     {stimulus: test_link + "Fc1_3212.jpg", data: {ftype: "3212"}},
-    {stimulus: test_link + "Fc1_3213.jpg", data: {ftype: "3213"}},
     //322
     {stimulus: test_link + "Fc1_3221.jpg", data: {ftype: "3221"}},
     {stimulus: test_link + "Fc1_3222.jpg", data: {ftype: "3222"}},
@@ -175,7 +175,6 @@ var test_stimuli = [
     {stimulus: test_link + "Fc1_3232.jpg", data: {ftype: "3232"}},
     {stimulus: test_link + "Fc1_3233.jpg", data: {ftype: "3233"}},
     //331
-    {stimulus: test_link + "Fc1_3311.jpg", data: {ftype: "3311"}},
     {stimulus: test_link + "Fc1_3312.jpg", data: {ftype: "3312"}},
     {stimulus: test_link + "Fc1_3313.jpg", data: {ftype: "3313"}},
     //332
@@ -218,15 +217,18 @@ timeline.push(testblock);
 var f1112 = jsPsych.data.get().filter({ftype: "1112"}).select('response').values;
 var f1113 = jsPsych.data.get().filter({ftype: "1113"}).select('response').values;
 ///f112_
+var f1121 = jsPsych.data.get().filter({ftype: "1121"}).select('response').values;
 var f1122 = jsPsych.data.get().filter({ftype: "1122"}).select('response').values;
 var f1123 = jsPsych.data.get().filter({ftype: "1123"}).select('response').values;
 ///f113_
+var f1131 = jsPsych.data.get().filter({ftype: "1131"}).select('response').values;
 var f1132 = jsPsych.data.get().filter({ftype: "1132"}).select('response').values;
 var f1133 = jsPsych.data.get().filter({ftype: "1133"}).select('response').values;
 ///f121_
 var f1212 = jsPsych.data.get().filter({ftype: "1212"}).select('response').values;
 var f1213 = jsPsych.data.get().filter({ftype: "1213"}).select('response').values;
 ///f122_
+var f1221 = jsPsych.data.get().filter({ftype: "1221"}).select('response').values;
 var f1222 = jsPsych.data.get().filter({ftype: "1222"}).select('response').values;
 var f1223 = jsPsych.data.get().filter({ftype: "1223"}).select('response').values;
 ///f123_
@@ -236,14 +238,15 @@ var f1233 = jsPsych.data.get().filter({ftype: "1233"}).select('response').values
 var f1312 = jsPsych.data.get().filter({ftype: "1312"}).select('response').values;
 var f1313 = jsPsych.data.get().filter({ftype: "1313"}).select('response').values;
 ///f132_
+var f1321 = jsPsych.data.get().filter({ftype: "1321"}).select('response').values;
 var f1322 = jsPsych.data.get().filter({ftype: "1322"}).select('response').values;
 var f1323 = jsPsych.data.get().filter({ftype: "1323"}).select('response').values;
 ///f133_
+var f1331 = jsPsych.data.get().filter({ftype: "1331"}).select('response').values;
 var f1332 = jsPsych.data.get().filter({ftype: "1332"}).select('response').values;
 var f1333 = jsPsych.data.get().filter({ftype: "1333"}).select('response').values;
 ///f211_
 var f2111 = jsPsych.data.get().filter({ftype: "2111"}).select('response').values;
-var f2112 = jsPsych.data.get().filter({ftype: "2112"}).select('response').values;
 var f2113 = jsPsych.data.get().filter({ftype: "2113"}).select('response').values;
 ///f212_
 var f2121 = jsPsych.data.get().filter({ftype: "2121"}).select('response').values;
@@ -254,7 +257,6 @@ var f2131 = jsPsych.data.get().filter({ftype: "2131"}).select('response').values
 var f2132 = jsPsych.data.get().filter({ftype: "2132"}).select('response').values;
 var f2133 = jsPsych.data.get().filter({ftype: "2133"}).select('response').values;
 ///f221_
-var f2211 = jsPsych.data.get().filter({ftype: "2211"}).select('response').values;
 var f2212 = jsPsych.data.get().filter({ftype: "2212"}).select('response').values;
 var f2213 = jsPsych.data.get().filter({ftype: "2213"}).select('response').values;
 ///f222_
@@ -267,7 +269,6 @@ var f2232 = jsPsych.data.get().filter({ftype: "2232"}).select('response').values
 var f2233 = jsPsych.data.get().filter({ftype: "2233"}).select('response').values;
 ///f231_
 var f2311 = jsPsych.data.get().filter({ftype: "2311"}).select('response').values;
-var f2312 = jsPsych.data.get().filter({ftype: "2312"}).select('response').values;
 var f2313 = jsPsych.data.get().filter({ftype: "2313"}).select('response').values;
 ///f232_
 var f2321 = jsPsych.data.get().filter({ftype: "2321"}).select('response').values;
@@ -280,7 +281,6 @@ var f2333 = jsPsych.data.get().filter({ftype: "2333"}).select('response').values
 ///f311_
 var f3111 = jsPsych.data.get().filter({ftype: "3111"}).select('response').values;
 var f3112 = jsPsych.data.get().filter({ftype: "3112"}).select('response').values;
-var f3113 = jsPsych.data.get().filter({ftype: "3113"}).select('response').values;
 ///f312
 var f3121 = jsPsych.data.get().filter({ftype: "3121"}).select('response').values;
 var f3122 = jsPsych.data.get().filter({ftype: "3122"}).select('response').values;
@@ -292,7 +292,6 @@ var f3133 = jsPsych.data.get().filter({ftype: "3133"}).select('response').values
 ///f321
 var f3211 = jsPsych.data.get().filter({ftype: "3211"}).select('response').values;
 var f3212 = jsPsych.data.get().filter({ftype: "3212"}).select('response').values;
-var f3213 = jsPsych.data.get().filter({ftype: "3213"}).select('response').values;
 ///f322
 var f3221 = jsPsych.data.get().filter({ftype: "3221"}).select('response').values;
 var f3222 = jsPsych.data.get().filter({ftype: "3222"}).select('response').values;
@@ -302,7 +301,6 @@ var f3231 = jsPsych.data.get().filter({ftype: "3231"}).select('response').values
 var f3232 = jsPsych.data.get().filter({ftype: "3232"}).select('response').values;
 var f3233 = jsPsych.data.get().filter({ftype: "3233"}).select('response').values;
 ///f331_
-var f3311 = jsPsych.data.get().filter({ftype: "3311"}).select('response').values;
 var f3312 = jsPsych.data.get().filter({ftype: "3312"}).select('response').values;
 var f3313 = jsPsych.data.get().filter({ftype: "3313"}).select('response').values;
 ///f332_

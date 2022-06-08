@@ -1,3 +1,0 @@
-Images have been retrieved from <a href="https://sites.google.com/andrew.cmu.edu/tarrlab/resources/tarrlab-stimuli">tarrlabs</a>
-[Tarr, M. J., Carnegie Mellon University]
-Fc1-test consists of Fribbles of the Fc1 species, where speciemens contain EITHER Head type 1 (Fc1_xxx1) and Leg type 1 (Fc1_1xxx)
