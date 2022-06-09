@@ -163,7 +163,6 @@ var test_stimuli = [
     {stimulus: test_link + "Fc1_3123.jpg", data: {ftype: "3123"}},
     //313
     {stimulus: test_link + "Fc1_3131.jpg", data: {ftype: "3131"}},
-    {stimulus: test_link + "Fc1_3132.jpg", data: {ftype: "3132"}},
     {stimulus: test_link + "Fc1_3133.jpg", data: {ftype: "3133"}},
     //321
     {stimulus: test_link + "Fc1_3211.jpg", data: {ftype: "3211"}},
