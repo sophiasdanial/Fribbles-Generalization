@@ -8,13 +8,13 @@
     position: fixed;
     left: 10px;
     top: 0;
-    font-size: 13px;}
+    font-size: 15px;}
 
     .main {
         display: flex;
         position: fixed;
         z-index: -1;
-        top: 35%;
+        top: 33%;
         left: 23%;
         font-size: 23px;
         animation: appear 30s
@@ -29,7 +29,7 @@
         position: fixed;
         display: flex;
         font-size: 23px;
-        top: 45%;
+        top: 38%;
         left: 23%;
         animation: appear2 30s
     }
@@ -37,6 +37,35 @@
         0% {opacity: 0;}
         50% {opacity: 0;}
         65% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+    .cond2 {
+        position: fixed;
+        display: flex;
+        text-align: center;
+        font-size: 23px;
+        top: 43%;
+        left: 23%;
+        animation: appear3 30s
+    }
+    @keyframes appear3 {
+        0% {opacity: 0;}
+        75% {opacity: 0;}
+        85% {opacity: 1;}
+        100% {opacity: 1;}
+    }
+
+    .cond3 {
+        position: fixed;
+        display: flex;
+        font-size: 23px;
+        top: 48%;
+        left: 23%;
+        animation: appear4 30s
+    }
+    @keyframes appear4 {
+        0% {opacity: 0;}
+        95% {opacity: 0;}
         100% {opacity: 1;}
     }
    
@@ -71,9 +100,10 @@
         max-width: 200px;
         height: auto;
     }
-
+        
     .yellowbox {
         position: fixed;
+        display: flex;
         z-index: 5;
         left: 7%;
         top: 33%;
@@ -99,13 +129,16 @@
         100% {transform:scale(.9);}
     }
 
+    
 
 </style>
 <body>
     <h1>You have <span style="color:red">3</span>  <i>[Zizu]</i> examples</h1>
     <div class="yellowbox"><img class="cau"src='https://sophiasdanial.github.io/Fribbles-Generalization/images/caution.png' alt=''></div>
     <div class="main"><p>To help facilitate your judgements, you will be presented with an array of boxes.</p></div>
-    <div class="cond"><p>The computer will help you select <strong>6</strong> of these boxes that contain further example items <br>representing the category <i>[Zizu]</i></p></div>
+    <div class="cond"><p>Each box contains an example item belonging to the category <i>[Zizu]</i></p></div>
+    <div class="cond2"><p>However, don't worry!</p></div>
+    <div class="cond3"><p>The computer will help you select <strong>6</strong> boxes containing helpful examples that best describe the <br>category <i>[Zizu]</i></p></div>
     <div class="eg1"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_2322.png' alt=''></div>
     <div class="eg2"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''></div>
     <div class="eg3"><img class="img" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_3233.png' alt=''></div>

@@ -10,7 +10,7 @@
   var answersheet = new Array;
   var opened = new Array;
   var correctboxes = 6;
-  var wrongboxes = 3;
+  var wrongboxes = 5;
   var correctcounter = 0;
   var fribpics = new Array;
   fribpics = [
@@ -36,7 +36,7 @@
 
   //box press - check if box is already opened and if 9 boxes already opened
   function change(buttonid) {
-	  if (opened.includes(buttonid) || counter >= 9){}
+	  if (opened.includes(buttonid) || counter >= 11){}
     else {
     opened.push(buttonid);
       addCount(buttonid);
@@ -49,7 +49,7 @@
     if(counter == 1){ //opening box 1
       correct = true;
     }
-    else if(counter < 9){ //opening boxes 2-8
+    else if(counter < 11){ //opening boxes 2-10
       var determiner = Math.random()
       if(determiner > 0.5){
         correct = answersheet.shift();
@@ -58,7 +58,7 @@
         correct = answersheet.pop();
       }
     }
-    else if (counter == 9){ //opening box 9
+    else if (counter == 11){ //opening box 11
       correct = true;
       finish();
       document.getElementById("buttonapp").innerHTML = "...Please wait for the 'next' button to appear";
@@ -77,7 +77,7 @@
     else {
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/whoops.png";
     }
-    document.getElementById("ncounter").innerHTML = (9 - counter);
+    document.getElementById("ncounter").innerHTML = (11 - counter);
   }
 ///// timer 
 function startTimer() {
@@ -116,7 +116,7 @@ function addpicture(){
 
 <body onload="startTimer()">
   
-  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. Click on any of the boxes to find a <i>[Zizu]</i>! You have <span id="ncounter" style="color:red">9</span> more chances  <span id="buttonapp" style="color:red"></span> <span id="timer" style="color:white">00:30</span></p></h1>
+  <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. Click on any of the boxes to find a <i>[Zizu]</i>! You have <span id="ncounter" style="color:red">11</span> more chances  <span id="buttonapp" style="color:red"></span> <span id="timer" style="color:white">00:40</span></p></h1>
   <div class="row">
     <frib>
       <img class="fribbles" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_2322.png' alt=''>
