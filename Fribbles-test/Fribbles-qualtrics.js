@@ -150,6 +150,9 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 var f3332 = jsPsych.data.get().filter({ftype: "3332"}).select('response').values;
                 var f3333 = jsPsych.data.get().filter({ftype: "3333"}).select('response').values;
 
+                ////threshold accuracy 
+                var accuracy_threshold = []
+
 
 
 
@@ -181,7 +184,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 Qualtrics.SurveyEngine.setEmbeddedData("f1232", f1232);
                 Qualtrics.SurveyEngine.setEmbeddedData("f1233", f1233);
 
-                Qualtrics.SurveyEngine.setEmbeddedData("f1311", f1131);
+                Qualtrics.SurveyEngine.setEmbeddedData("f1311", f1311);
                 Qualtrics.SurveyEngine.setEmbeddedData("f1312", f1312);
                 Qualtrics.SurveyEngine.setEmbeddedData("f1313", f1313);
 
@@ -265,6 +268,8 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 Qualtrics.SurveyEngine.setEmbeddedData("f3331", f3331);
                 Qualtrics.SurveyEngine.setEmbeddedData("f3332", f3332);
                 Qualtrics.SurveyEngine.setEmbeddedData("f3333", f3333);
+
+                Qualtrics.SurveyEngine.setEmbeddedData("threshold", accuracy_threshold);
 
 
                 jQuery('#display_stage').remove();
