@@ -236,7 +236,7 @@ var testblock = {
         accuracy_threshold = 1;
     }
     data.accuracy_threshold = accuracy_threshold;
-    jsPsych.data.write(accuracy_threshold)
+    jsPsych.data.get().addToLast({accuracy_threshold: accuracy_threshold});
     }
 };
 
@@ -355,4 +355,4 @@ var f3333 = jsPsych.data.get().filter({ftype: "3333"}).select('response').values
 
 ///threshold accuracy
 var ex_sum = f1111 + f1212 + f1313 + f2123 + f2221 + f2322 + f3132 + f3233 + f3331
-var thresh = jsPsych.data.get().select('accuracy_threshold').values;
+var thresh = jsPsych.data.getLastTrialData().filter({accuracy_threshold: accuracy_threshold}).select().values;
