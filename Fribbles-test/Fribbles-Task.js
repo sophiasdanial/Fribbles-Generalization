@@ -226,18 +226,7 @@ var testblock = {
     timeline: [testchoice],
     timeline_variables: test_stimuli,
     randomize_order: true,
-    data: jsPsych.timelineVariable('data'),
-    on_finish: function (data){
-    var accuracy_threshold = 0;
-    if (ex_sum < 630){
-        accuracy_threshold = 0;
-    }
-    else if (ex_sum >= 630){
-        accuracy_threshold = 1;
-    }
-    data.accuracy_threshold = accuracy_threshold;
-    jsPsych.data.get().addToLast({accuracy_threshold: accuracy_threshold});
-    }
+    data: jsPsych.timelineVariable('data')
 };
 
 timeline.push(testblock);
@@ -355,4 +344,12 @@ var f3333 = jsPsych.data.get().filter({ftype: "3333"}).select('response').values
 
 ///threshold accuracy
 var ex_sum = f1111 + f1212 + f1313 + f2123 + f2221 + f2322 + f3132 + f3233 + f3331
-var thresh = jsPsych.data.getLastTrialData().filter({accuracy_threshold: accuracy_threshold}).select().values;
+function accuracy_threshold(ex_sum) {
+    let thresh;
+    if (ex_sum < 630) {
+        thresh = 0;
+    } else if (ex_sum >= 630) {
+        thresh = 1;
+    }
+    return thresh;
+}
