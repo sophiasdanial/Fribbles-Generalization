@@ -343,13 +343,14 @@ var f3332 = jsPsych.data.get().filter({ftype: "3332"}).select('response').values
 var f3333 = jsPsych.data.get().filter({ftype: "3333"}).select('response').values;
 
 ///threshold accuracy
-var ex_sum = f1111 + f1212 + f1313 + f2123 + f2221 + f2322 + f3132 + f3233 + f3331
-function accuracy_threshold(ex_sum) {
-    let thresh;
+var ex_sum = Number(f1111) + Number(f1212) + Number(f1313) + Number(f2123) + Number(f2221) + Number(f2322) + Number(f3132) + Number(f3233) + Number(f3331);
+var thresh = test_acc(ex_sum);
+function test_acc(ex_sum) {
+    var accuracy_threshold = 0;
     if (ex_sum < 630) {
-        thresh = 0;
+        accuracy_threshold = 0;
     } else if (ex_sum >= 630) {
-        thresh = 1;
-    }
-    return thresh;
-}
+        accuracy_threshold = 1;
+    } return accuracy_threshold;
+};
+
