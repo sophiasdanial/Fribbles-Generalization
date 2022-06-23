@@ -100,8 +100,9 @@ function addpicture(){
   var fribid = "frib" + (correctcounter + 1);
   var friblink = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_' + fribpics[correctcounter];
   document.getElementById(fribid).src = friblink;
-  }
+}
 
-  function finish(){
-  //whatever you want to do when they open 9 boxes
+function finish(){
+//whatever you want to do when they open 11 boxes
+    qthis.showNextButton();
 }
