@@ -4,7 +4,77 @@
   <script src="https://sophiasdanial.github.io/Fribbles-Generalization/animations/UCgrid.js"></script>
 </head>
 
-<body onload="startTimer()">
+<style>
+body {
+  width: 100%;
+  margin: auto;
+}
+
+div {
+   font-size: 0;
+}
+
+.grid {
+  position: fixed;
+  z-index: 2;
+  top: 24%;
+  left: 20%;
+  height: 88%;
+  width: 60%;
+  overflow: hidden
+}
+
+figure {
+margin:0.7% -1.5%;
+padding: 0.5%;
+max-height: 16%;
+width: 18%;
+overflow: hidden;
+display: inline-block;
+}
+
+figure:hover img {
+transform: scale(1.15);
+}
+
+img {
+height:10vh;
+width: auto;
+margin: 0 auto;
+display: block;
+transition: transform .2s ease-in-out;
+}
+
+h1 {
+position: fixed;
+left: 2%;
+top: 0;
+font-size: 15px;
+}
+
+.row {
+position: fixed;
+top: 5vh;
+left: 1vw;
+height: 20vh;
+width: 96vw;
+display: flex;
+}
+
+frib {
+  display: block;
+  height: 20vh;
+  margin: 0 auto;
+  }
+
+.fribbles {
+  min-height: 15vh;
+  width: auto;
+  display: flex;
+}
+</style>
+
+<body>
   
   <h1><p>You have <span id="counter" style="color:red">3</span> <i>[Zizu]</i> examples. Click on any of the boxes to find a <i>[Zizu]</i>! You have <span id="ncounter" style="color:red">11</span> more chances  <span id="buttonapp" style="color:red"></span> <span id="timer" style="color:white">00:40</span></p></h1>
   <div class="row">
