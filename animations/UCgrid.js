@@ -54,6 +54,8 @@
     else if (counter == 11){ //opening box 11
       correct = true;
       finish();
+      document.getElementById("buttonapp").innerHTML = "...Please wait for the 'next' button to appear";
+      document.getElementById("timer").style = "color:red";
     }
     else { //attempting to open box 10+
     }
