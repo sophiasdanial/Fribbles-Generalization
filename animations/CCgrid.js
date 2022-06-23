@@ -62,6 +62,21 @@
       document.getElementById("ncounter").innerHTML = (6 - correctcounter);
     }
   }
+
+  window.onload = function(){
+    setTimeout(function(){
+      document.getElementById('box18').click();}, 5000);
+    setTimeout(function(){
+      document.getElementById('box11').click();}, 10000);
+    setTimeout(function(){
+      document.getElementById('box16').click();}, 15000);
+    setTimeout(function(){
+      document.getElementById('box15').click();}, 20000);
+    setTimeout(function(){
+      document.getElementById('box20').click();}, 25000);
+    setTimeout(function(){
+      document.getElementById('box13').click();}, 30000);
+    };
   
 
   //correct box found
