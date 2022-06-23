@@ -54,7 +54,6 @@
     else if (counter == 11){ //opening box 11
       correct = true;
       finish();
-      qthis.showNextButton();
       document.getElementById("buttonapp").innerHTML = "...Please wait for the 'next' button to appear";
       document.getElementById("timer").style = "color:red";
     }
