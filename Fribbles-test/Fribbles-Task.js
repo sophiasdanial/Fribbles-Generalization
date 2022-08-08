@@ -62,7 +62,7 @@ var test_stimuli = [
     //FC13_3
     {stimulus: test_link + "Fc13_3221.png", data: {ftype: "3221"}},
     {stimulus: test_link + "Fc13_3313.png", data: {ftype: "3313"}},
-    {stimulus: train_link + "Fc13_12232.png", data: {ftype: "12232"}}
+    {stimulus: test_link + "Fc13_12232.png", data: {ftype: "12232"}}
 ];
 
 //test blocks//
