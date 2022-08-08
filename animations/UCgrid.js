@@ -14,7 +14,7 @@
 
 
   //generating answersheet
-  while (correctboxes > 2){
+  while (correctboxes > 1){
     answersheet.push(true);
     correctboxes -= 1;
   }

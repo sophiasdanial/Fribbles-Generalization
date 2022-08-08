@@ -10,9 +10,9 @@ div {
 .grid {
   position: fixed;
   z-index: 2;
-  top: 24%;
+  top: 23%;
   left: 20%;
-  height: 88%;
+  height: 60%;
   width: 60%;
   overflow: hidden
 }
@@ -20,8 +20,8 @@ div {
 figure {
 margin:1%;
 padding: 1%;
-max-height: 20%;
-width: 20%;
+max-height: 15%;
+width: 15%;
 overflow: hidden;
 display: inline-block;
 }
@@ -31,7 +31,7 @@ transform: scale(1.15);
 }
 
 img {
-height:10vh;
+height:5vh;
 width: auto;
 margin: 0 auto;
 display: block;
