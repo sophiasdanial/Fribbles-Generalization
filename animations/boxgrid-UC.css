@@ -14,7 +14,8 @@ div {
   bottom: 10px;
   left: 30%;
   right: 30%;
-  max-width: 640px;
+  min-width: 600px;
+  max-width: 650px;
   min-height: 520px;
   overflow: hidden
 }
