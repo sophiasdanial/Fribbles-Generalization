@@ -10,18 +10,20 @@ div {
 .grid {
   position: fixed;
   z-index: 2;
-  top: 23%;
-  left: 20%;
-  height: 60%;
-  width: 60%;
+  top: 220px;
+  bottom: 10px;
+  left: 30%;
+  right: 30%;
+  max-width: 640px;
+  min-height: 520px;
   overflow: hidden
 }
 
 figure {
-margin:1%;
-padding: 1%;
-max-height: 15%;
-width: 15%;
+margin:5px;
+padding: 0;
+max-height: 100px;
+width: 150px;
 overflow: hidden;
 display: inline-block;
 }
@@ -31,7 +33,7 @@ transform: scale(1.15);
 }
 
 img {
-height:5vh;
+max-height:100px;
 width: auto;
 margin: 0 auto;
 display: block;
@@ -49,19 +51,19 @@ font-size: 15px;
 position: fixed;
 top: 5vh;
 left: 1vw;
-height: 20vh;
+max-height: 250px;
 width: 96vw;
 display: flex;
 }
 
 frib {
   display: block;
-  height: 20vh;
+  height: 200px;
   margin: 0 auto;
   }
 
 .fribbles {
-  min-height: 15vh;
+  max-height: 150px;
   width: auto;
   display: flex;
 }
