@@ -9,12 +9,12 @@ var preload = {
     message: 'Loading images... Please wait',
     images: [
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/1000pxslidermarkings.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1312.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1321.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2132.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2311.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3213.png',
 
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_1312.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_1321.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_2132.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_2311.png',
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_3213.png',
