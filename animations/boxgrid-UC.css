@@ -10,20 +10,18 @@ div {
 .grid {
   position: fixed;
   z-index: 2;
-  top: 220px;
+  top: 25vh;
   bottom: 10px;
-  left: 30%;
-  right: 30%;
-  min-width: 620px;
-  max-width: 650px;
-  min-height: 520px;
+  margin: auto;
+  width: 75vw;
+  height: auto;
   overflow: hidden
 }
 
 figure {
 margin:5px;
 padding: 0;
-max-height: 100px;
+height: 150px;
 width: 150px;
 overflow: hidden;
 display: inline-block;
@@ -55,6 +53,13 @@ left: 1vw;
 max-height: 250px;
 width: 96vw;
 display: flex;
+}
+
+.boxrow {
+  height: 12vh;
+  width: auto;
+  margin: 20px 0 20px 0;
+  display: block;
 }
 
 frib {
