@@ -1,20 +1,28 @@
 <link href="https://sophiasdanial.github.io/jsPsych-Navon-Task/css/jspsych.css" rel="stylesheet" type="text/css"></link>
 
-<h1>You have <span style="color:red">6</span>  <i>Zizu</i> examples</h1>
-<div class="row">
+
+<div class="box1">
+    <h1>You have <span style="color:red">6</span>  <i>Zizu</i> examples</h1>
+  <div class="row">
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_2322.png' alt=''>
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''>
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_3233.png' alt=''>
+  </div>
+  <div class="row">
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1222.png' alt=''>
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_2133.png' alt=''>
     <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_3311.png' alt=''>
+  </div>
 </div>
-<h2> Below are examples of what is <b><i>not</i></b> a <i>Zizu</i>! Avoid them as much as possible</h2>
-<div class="row2">
-    <img class="size2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc3_2322.png' alt=''>
-    <img class="size2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc3_1111.png' alt=''>
-    <img class="size2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc3_3233.png' alt=''>
+<div class="box2">
+    <h2> Below are examples of what is <b><i>not</i></b> a <i>Zizu</i>! Avoid them as much as possible</h2>
+  <div class="row">
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc3_2322.png' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc3_1111.png' alt=''>
+    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc3_3233.png' alt=''>
+  </div>
 </div>
+
 
 
 <style>
@@ -27,60 +35,61 @@
       position: fixed;
       z-index: 2;
       left: 1vw;
-      top: 19vh;
+      top: 25vh;
       bottom: 0vh;
       width: 98vw;
-      height: 80vh;
+      height: 75vh;
       background-color: transparent;
       overflow-y: hidden;
       overflow-x: hidden;
     }
+    
+    .box1 {
+      position: fixed;
+      width: 47vw;
+      height: auto;
+      left: 2%;
+      display: block;
+      border: 2px solid black;
+    }
+
+    .box2 {
+      position: fixed;
+      width: 47vw;
+      height: auto;
+      right: 2%;
+      display: block;
+      border: 2px solid black;
+    }
   
     h1 {
-      position: fixed;
+      position: relative;
       left: 2%;
       top: 0%;
-      font-size: 18px;
+      margin-bottom: 10px;
+      font-size: 17px;
     }
 
     h2 {
       position: relative;
       left: 1%;
-      top: 7%;
-      font-size: 18px;
+      top: 0%;
+      margin-top: 10px;
+      font-size: 17px;
     }
   
     .row {
-      position: relative;
-      top: 4%;
-      height: 15vh;
-      width: 96vw;
-      margin: 7px;
       display: flex;
-      
-    }
-
-    .row2 {
-      position: relative;
-      top: 8%;
-      height: 15vh;
-      width: 45vw;
-      margin: 7px;
-      display: flex;
+      margin: 15px 0;
+      padding-bottom: 20px ;
+      height: 10vh;
     }
 
     .size {
       position: relative;
-      max-height: 250px;
+      min-height: 100px;
+      width: auto;
       margin: 0 auto;
-      width: auto;
-      display: block;
-    }
-
-    .size2 {
-      position: relative;
-      min-height: 150px;
-      width: auto;
       display: block;
     }
   </style>
