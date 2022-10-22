@@ -67,7 +67,7 @@ window.onload = function(){
   setTimeout(function(){
     document.getElementById('box9').click();}, 5000);
   setTimeout(function(){
-    document.getElementById('box2').click();}, 8000);
+    document.getElementById('box15').click();}, 8000);
   setTimeout(function(){
     document.getElementById('box5').click();}, 11000);
   };
