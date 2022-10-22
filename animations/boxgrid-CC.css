@@ -21,7 +21,7 @@ div {
 }
 
 .gridrow {
-  display: inline-block;
+  display: flex;
 }
 
 figure {
@@ -37,8 +37,8 @@ display: inline-block;
 img {
   margin: 0 auto;
   display: block;
-  }
-  
+}
+
 h1 {
 position: fixed;
 left: 2vw;
