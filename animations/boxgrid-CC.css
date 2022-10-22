@@ -10,7 +10,6 @@ div {
 
 .grid {
   position: fixed;
-  display: flex;
   margin: auto;
   left: 0;
   right: 0;
@@ -21,14 +20,15 @@ div {
 }
 
 .gridrow {
-  display: flex;
+  display: block;
+  width: 60vw;
 }
 
 figure {
 margin: 15px 30px 15px;
 padding: 5px;
 height: 10vh;
-width: auto;
+width: 10vh;
 overflow: hidden;
 display: inline-block;
 }
