@@ -1,68 +1,41 @@
 //* based on jsPsych v6.x 
 /* Fribbles Task */
 var timeline = [];
-var trial_count = 20;
-var test_link = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/'
+var trial_count = 9;
+var test_link = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/'
 var preload = {
     type: 'preload',
     show_progress_bar: true,
     message: 'Loading images... Please wait',
     images: [
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/1000pxslidermarkings.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_1321.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2132.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_2311.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc1_3213.png',
-
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_1321.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_2132.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_2311.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc3_3213.png',
-
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_1132.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_1211.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_1312.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_1332.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_2121.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_2133.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_2231.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_2233.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_2321.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_3221.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_3313.png',
-        'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-test/Fc13_12232.png'
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc1-2.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc1-3.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc1-4.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc2-2.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc2-3.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc2-4.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc3-2.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc3-3.png',
+        'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc3-4.png'
     ]
 }
 timeline.push(preload)
 
 /////// List stimuli /////////
-// note - test stimuli contains either Head 1 or Leg 1
 var test_stimuli = [
     //FC1
-    {stimulus: test_link + "Fc1_1321.png", data: {ftype: "fc1-1321"}},
-    {stimulus: test_link + "Fc1_2132.png", data: {ftype: "fc1-2132"}},
-    {stimulus: test_link + "Fc1_2311.png", data: {ftype: "fc1-2311"}},
-    {stimulus: test_link + "Fc1_3213.png", data: {ftype: "fc1-3213"}},
+    {stimulus: test_link + "fc1-2.png", data: {ftype: "fc1-2"}},
+    {stimulus: test_link + "fc1-3.png", data: {ftype: "fc1-3"}},
+    {stimulus: test_link + "fc1-4.png", data: {ftype: "fc1-4"}},
+    //FC2
+    {stimulus: test_link + "fc2-2.png", data: {ftype: "fc2-2"}},
+    {stimulus: test_link + "fc2-3.png", data: {ftype: "fc2-3"}},
+    {stimulus: test_link + "fc2-4.png", data: {ftype: "fc2-4"}},
     //FC3
-    {stimulus: test_link + "Fc3_1321.png", data: {ftype: "fc3-1321"}},
-    {stimulus: test_link + "Fc3_2132.png", data: {ftype: "fc3-2132"}},
-    {stimulus: test_link + "Fc3_2311.png", data: {ftype: "fc3-2311"}},
-    {stimulus: test_link + "Fc3_3213.png", data: {ftype: "fc3-3213"}},
-    //FC13_1
-    {stimulus: test_link + "Fc13_1132.png", data: {ftype: "1132"}},
-    {stimulus: test_link + "Fc13_1211.png", data: {ftype: "1211"}},
-    {stimulus: test_link + "Fc13_1312.png", data: {ftype: "1312"}},
-    {stimulus: test_link + "Fc13_1332.png", data: {ftype: "1332"}},
-    //FC13_2
-    {stimulus: test_link + "Fc13_2121.png", data: {ftype: "2121"}},
-    {stimulus: test_link + "Fc13_2133.png", data: {ftype: "2133"}},
-    {stimulus: test_link + "Fc13_2231.png", data: {ftype: "2231"}},
-    {stimulus: test_link + "Fc13_2233.png", data: {ftype: "2233"}},
-    {stimulus: test_link + "Fc13_2321.png", data: {ftype: "2321"}},
-    //FC13_3
-    {stimulus: test_link + "Fc13_3221.png", data: {ftype: "3221"}},
-    {stimulus: test_link + "Fc13_3313.png", data: {ftype: "3313"}},
-    {stimulus: test_link + "Fc13_12232.png", data: {ftype: "12232"}}
+    {stimulus: test_link + "fc3-2.png", data: {ftype: "fc3-2"}},
+    {stimulus: test_link + "fc3-3.png", data: {ftype: "fc3-3"}},
+    {stimulus: test_link + "fc3-4.png", data: {ftype: "fc3-4"}}
 ];
 
 //test blocks//
@@ -93,31 +66,19 @@ timeline.push(testblock);
 /* define results for Qualtrics*/
 
 /// FC1
-var fc11 = jsPsych.data.get().filter({ftype: "fc1-1321"}).select('response').values;
-var fc12 = jsPsych.data.get().filter({ftype: "fc1-2132"}).select('response').values;
-var fc13 = jsPsych.data.get().filter({ftype: "fc1-2311"}).select('response').values;
-var fc14 = jsPsych.data.get().filter({ftype: "fc1-3213"}).select('response').values;
-/// FC3
-var fc31 = jsPsych.data.get().filter({ftype: "fc3-1321"}).select('response').values;
-var fc32 = jsPsych.data.get().filter({ftype: "fc3-2132"}).select('response').values;
-var fc33 = jsPsych.data.get().filter({ftype: "fc3-2311"}).select('response').values;
-var fc34 = jsPsych.data.get().filter({ftype: "fc3-3213"}).select('response').values;
-///FC13_1
-var f1132 = jsPsych.data.get().filter({ftype: "1132"}).select('response').values;
-var f1211 = jsPsych.data.get().filter({ftype: "1211"}).select('response').values;
-var f1312 = jsPsych.data.get().filter({ftype: "1312"}).select('response').values;
-///FC13_2
-var f2121 = jsPsych.data.get().filter({ftype: "2121"}).select('response').values;
-var f2133 = jsPsych.data.get().filter({ftype: "2133"}).select('response').values;
-var f2231 = jsPsych.data.get().filter({ftype: "2231"}).select('response').values;
-var f2233 = jsPsych.data.get().filter({ftype: "2233"}).select('response').values;
-var f2321 = jsPsych.data.get().filter({ftype: "2321"}).select('response').values;
-///FC13_3
-var f3221 = jsPsych.data.get().filter({ftype: "3221"}).select('response').values;
-var f3313 = jsPsych.data.get().filter({ftype: "3313"}).select('response').values;
-var f12232= jsPsych.data.get().filter({ftype: "12232"}).select('response').values;
+var fc12 = jsPsych.data.get().filter({ftype: "fc1-2"}).select('response').values;
+var fc13 = jsPsych.data.get().filter({ftype: "fc1-3"}).select('response').values;
+var fc14 = jsPsych.data.get().filter({ftype: "fc1-4"}).select('response').values;
+/// FC2
+var fc22 = jsPsych.data.get().filter({ftype: "fc2-2"}).select('response').values;
+var fc23 = jsPsych.data.get().filter({ftype: "fc2-3"}).select('response').values;
+var fc24 = jsPsych.data.get().filter({ftype: "fc2-4"}).select('response').values;
+///FC3
+var f32 = jsPsych.data.get().filter({ftype: "fc3-2"}).select('response').values;
+var f33 = jsPsych.data.get().filter({ftype: "fc3-3"}).select('response').values;
+var f34 = jsPsych.data.get().filter({ftype: "fc3-4"}).select('response').values;
 
-///threshold accuracy
+///threshold accuracy (defunct)
 var ex_sum = Number(fc11) + Number(fc12) + Number(fc13) + Number(fc14);
 var thresh = test_acc(ex_sum);
 function test_acc(ex_sum) {
