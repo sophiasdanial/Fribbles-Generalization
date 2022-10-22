@@ -11,13 +11,12 @@ div {
 .grid {
   position: fixed;
   display: flex;
-  padding: 10px;
   margin: auto;
   left: 0;
   right: 0;
-  top: 30%;
-  bottom: 10%;
-  width: 60%;
+  top: 30vh;
+  bottom: 10vh;
+  width: 60vw;
   overflow: hidden
 }
 
@@ -48,7 +47,7 @@ img {
   
 h1 {
 position: fixed;
-left: 2%;
+left: 2vw;
 top: 0;
 font-size: 20px;
 }
@@ -70,8 +69,8 @@ display: flex;
 #cursor {
   position: fixed;
   z-index: 6;
-  top: 120%;
-  right: 5%;
+  top: 120vh;
+  right: 5vw;
   height: 10px;
   animation: cursor 13s;
 }
