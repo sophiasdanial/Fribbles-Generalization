@@ -67,9 +67,9 @@ window.onload = function(){
   setTimeout(function(){
     document.getElementById('box9').click();}, 5000);
   setTimeout(function(){
-    document.getElementById('box15').click();}, 8000);
+    document.getElementById('box15').click();}, 9000);
   setTimeout(function(){
-    document.getElementById('box6').click();}, 11000);
+    document.getElementById('box6').click();}, 13000);
   };
 
 
