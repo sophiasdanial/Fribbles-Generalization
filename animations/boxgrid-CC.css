@@ -33,16 +33,12 @@ overflow: hidden;
 display: inline-block;
 }
 
-figure:hover img {
-transform: scale(1.15);
-}
 
 img {
   height:10vh;
   width: auto;
   margin: 0 auto;
   display: block;
-  transition: transform .2s ease-in-out;
   }
   
 h1 {
