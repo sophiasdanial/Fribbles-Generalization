@@ -2,65 +2,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://sophiasdanial.github.io/Fribbles-Generalization/animations/CCgrid.js"></script>
 </head>
-
 <style>
-body {
-  width: 100%;
+  body {
+  width: 100vw;
   margin: auto;
   pointer-events: none;
 }
 
-div {
-  font-size: 0;
-}
-
-.grid {
+#grid {
   position: fixed;
-  display: flex;
-  padding: 10px;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: 30%;
-  bottom: 10%;
-  width: 60%;
+  z-index: 2;
+  top: 35vh;
+  bottom: 8vh;
+  left: 10vw;
+  right: 10vw;
+  display: block;
   overflow: hidden
 }
 
 .gridrow {
-  display: inline-block;
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 figure {
 margin: 15px 30px 15px;
 padding: 5px;
 height: 10vh;
-width: auto;
+width: 10vh;
 overflow: hidden;
 display: inline-block;
 }
 
-figure:hover img {
-transform: scale(1.15);
-}
-
-img {
-  height:10vh;
-  width: auto;
-  margin: 0 auto;
-  display: block;
-  transition: transform .2s ease-in-out;
-  }
-  
 h1 {
 position: fixed;
-left: 2%;
+left: 2vw;
 top: 0;
 font-size: 20px;
 }
 
 #row {
 position: fixed;
+z-index: 2;
 top: 8vh;
 left: 1vw;
 height: 20vh;
@@ -76,19 +62,21 @@ display: flex;
 #cursor {
   position: fixed;
   z-index: 6;
-  top: 120%;
-  right: 5%;
-  height: 10px;
+  top: 120vh;
+  right: 5vw;
   animation: cursor 13s;
+}
+
+#pointer {
+  max-height: 100px
 }
 @keyframes cursor {
   0% {top: 120%; right: 5%}
-  38% {top: 38%; right: 42%}
-  69% {top: 67%; right: 28%}
-  100% {top: 52%; right: 57%}
+  38% {top: 65%; right: 61%}
+  69% {top: 78%; right: 43%}
+  100% {top: 52%; right: 51%}
 }
 </style>
-
 <body>
   
   <h1><p>You have <span id="counter" style="color:red">1</span> <i>[Zizu]</i> examples. Please wait while the computer selects <span id="ncounter" style="color:red">3</span> more examples for you</p></h1>
@@ -103,7 +91,7 @@ display: flex;
       <img class= "ex" id="frib7" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
   </div>
 
-<div class="grid">
+<div id="grid">
   <div class="gridrow">
     <figure>
       <img onclick="test()" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
@@ -161,5 +149,5 @@ display: flex;
     </figure>
   </div>
 </div>
-<div id="cursor"><img src="https://sophiasdanial.github.io/Fribbles-Generalization/images/cursor.png"></div>
+<div id="cursor"><img id= "pointer" src="https://sophiasdanial.github.io/Fribbles-Generalization/images/cursor.png"></div>
 </body>
