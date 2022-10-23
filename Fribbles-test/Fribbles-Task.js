@@ -78,15 +78,4 @@ var fc32 = jsPsych.data.get().filter({ftype: "fc3-2"}).select('response').values
 var fc33 = jsPsych.data.get().filter({ftype: "fc3-3"}).select('response').values;
 var fc34 = jsPsych.data.get().filter({ftype: "fc3-4"}).select('response').values;
 
-///threshold accuracy (defunct)
-var ex_sum = Number(fc11) + Number(fc12) + Number(fc13) + Number(fc14);
-var thresh = test_acc(ex_sum);
-function test_acc(ex_sum) {
-    var accuracy_threshold = 0;
-    if (ex_sum < 200) {
-        accuracy_threshold = 0;
-    } else if (ex_sum >= 200) {
-        accuracy_threshold = 1;
-    } return accuracy_threshold;
-};
 
