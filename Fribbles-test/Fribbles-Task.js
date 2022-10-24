@@ -46,7 +46,7 @@ var testchoice= {
     prompt: '<p style="margin:0px">How likely is this item a <i>Zizu</i>?</p>',
     labels: ['0', '100'],
     slider_width: 1002,
-    stimulus_width: 350,
+    stimulus_width: 850,
     maintain_aspect_ratio: true,
     button_label: 'continue',
     require_movement: true,
