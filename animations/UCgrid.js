@@ -52,7 +52,7 @@
       correct = true;
       finish();
     }
-    else { //attempting to open box 10+
+    else { //attempting to open box 9+
     }
     if (correct){
       addpicture();
@@ -77,6 +77,5 @@ function addpicture(){
 }
 
 function finish(){
-//whatever you want to do when they open 11 boxes
-  this.clickNextButton();
+//whatever you want to do when they open 9 boxes
 }
