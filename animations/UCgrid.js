@@ -57,7 +57,7 @@
     if (correct){
       addpicture();
       correctcounter += 1;
-      document.getElementById("counter").innerHTML = (3 + correctcounter);
+      document.getElementById("counter").innerHTML = (1 + correctcounter);
     }
     if (correct) {
       document.getElementById(buttonid).src = "https://sophiasdanial.github.io/Fribbles-Generalization/images/found.png";
