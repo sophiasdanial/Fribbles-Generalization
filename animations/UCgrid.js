@@ -78,5 +78,5 @@ function addpicture(){
 
 function finish(){
 //whatever you want to do when they open 11 boxes
-  that.clickNextButton();
+  this.clickNextButton();
 }
