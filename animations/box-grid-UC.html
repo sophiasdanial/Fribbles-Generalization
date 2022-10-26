@@ -1,89 +1,134 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel='stylesheet' type='text/css' href='https://sophiasdanial.github.io/Fribbles-Generalization/animations/boxgrid-UC.css'>
   <script src="https://sophiasdanial.github.io/Fribbles-Generalization/animations/UCgrid.js"></script>
 </head>
+<style>
+  body {
+  width: 100vw;
+  margin: auto;
+  pointer-events: none;
+}
 
+#grid {
+  position: fixed;
+  z-index: 2;
+  top: 35vh;
+  bottom: 8vh;
+  left: 10vw;
+  right: 10vw;
+  display: block;
+  overflow: hidden
+}
+
+.gridrow {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+figure {
+margin: 15px 30px 15px;
+padding: 5px;
+height: 10vh;
+width: 10vh;
+overflow: hidden;
+display: inline-block;
+}
+
+h1 {
+position: fixed;
+left: 2vw;
+top: 0;
+font-size: 20px;
+}
+
+#row {
+position: fixed;
+z-index: 2;
+top: 8vh;
+left: 1vw;
+height: 20vh;
+width: 96vw;
+display: flex;
+}
+
+.ex {
+  height: 20vh;
+  width: auto
+}
+</style>
 <body>
   
   <h1><p>You have <span id="counter" style="color:red">1</span> <i>Zizu</i> examples. Click on any of the boxes to find a <i>Zizu</i>! You have <span id="ncounter" style="color:red">8</span> more chances  <span id="buttonapp" style="color:red"></span></p></h1>
-  <div class="row">
-    <frib>
-      <img class="fribbles" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_2322.png' alt=''>
-    </frib>
-    <frib>
-      <img class="fribbles" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_1111.png' alt=''>
-    </frib>
-    <frib>
-      <img class="fribbles" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_3233.png' alt=''>
-    </frib>
-    <frib>
-      <img class="fribbles" id="frib1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
-    </frib>
-    <frib>
-      <img class="fribbles" id="frib2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
-    </frib>
-    <frib>
-      <img class="fribbles" id="frib3" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
-    </frib>
-  </div>
-<div class="grid">
-  <div class="boxrow">
-    <figure>
-      <img onclick="change('box1')" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box2')" id="box2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box3')" id="box3" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box4')" id="box4" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-  </div>
-  <div class="boxrow">
-    <figure>
-      <img onclick="change('box5')" id="box5" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box6')" id="box6" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box7')" id="box7" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box8')" id="box8" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-  </div>
-  <div class="boxrow">
-    <figure>
-      <img onclick="change('box9')" id="box9" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box10')" id="box10" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box11')" id="box11" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box12')" id="box12" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-  </div>
-  <div class="boxrow">
-    <figure>
-      <img onclick="change('box13')" id="box13" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box14')" id="box14" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box15')" id="box15" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-    <figure>
-      <img onclick="change('box16')" id="box16" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
-    </figure>
-  </div>
-    
+  <div id="row">
+    <img class= "ex" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc4.png' alt=''>
+    <img class= "ex" id="frib1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
+    <img class= "ex" id="frib2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
+    <img class= "ex" id="frib3" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
+    <img class= "ex" id="frib4" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
+    <img class= "ex" id="frib5" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
+    <img class= "ex" id="frib6" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
+    <img class= "ex" id="frib7" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
 </div>
-</body>
+
+<div id="grid">
+<div class="gridrow">
+  <figure>
+    <img onclick="test()" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box2')" id="box2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box3')" id="box3" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box4')" id="box4" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+</div>
+<div class="gridrow">
+  <figure>
+    <img onclick="change('box5')" id="box5" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box6')" id="box6" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box7')" id="box7" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box8')" id="box8" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+</div>
+<div class="gridrow">
+  <figure>
+    <img onclick="change('box9')" id="box9" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box10')" id="box10" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box11')" id="box11" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box12')" id="box12" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+</div>
+<div class="gridrow">
+  <figure>
+    <img onclick="change('box13')" id="box13" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box14')" id="box14" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box15')" id="box15" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+  <figure>
+    <img onclick="change('box16')" id="box16" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+  </figure>
+</div>
+</div>
+

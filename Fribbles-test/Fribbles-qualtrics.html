@@ -17,7 +17,6 @@
 </div>
 
 
-
 <style>
   #display_stage_background {
     width: 100vw;
@@ -27,10 +26,10 @@
   #display_stage {
     position: fixed;
     z-index: 2;
-    top: 25vh;
-    bottom: 0vh;
+    top: 320px;
     width: 98vw;
-    height: 75vh;
+    height: auto;
+    bottom: 10px;
     background-color: transparent;
     overflow-y: hidden;
     overflow-x: hidden;
@@ -38,31 +37,31 @@
   
   .exemplar {
     position: fixed;
-    top: 1vh;
+    top: 5px;
     left: 10vw;
     right: 10vw;
-    height: 400px;
+    height: 350px;
     display: inline-block;
-    border: 2px solid black;
+    border: 2px solid grey;
   }
 
   #CSplus {
-    display: flex;
+    height: 110px;
     position: relative;
     text-align: center;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 7px;
   }
 
   #CSminus {
-    display: flex;
+    height: 110px;
     position: relative;
     text-align: center;
     align-items: center;
   }
 
   h1 {
-    margin: 10px 20px;
+    margin: 10px;
     font-size: 20px;
     text-align: center;
     left: 5vw;
@@ -70,7 +69,7 @@
   }
 
   h2 {
-    margin: 20px;
+    margin: 10px;
     font-size: 20px;
     text-align: center;
     left: 5vw;
@@ -79,9 +78,7 @@
 
   .size {
     position: relative;
-    height: 150px;
-    margin: 0 auto;
-    display: block;
+    max-height: 110px;
   }
 
   </style>
