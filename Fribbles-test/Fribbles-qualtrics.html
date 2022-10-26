@@ -1,78 +1,80 @@
 <link href="https://sophiasdanial.github.io/jsPsych-Navon-Task/css/jspsych.css" rel="stylesheet" type="text/css"></link>
 
-
-<div id="box1">
-    <h1>You have <span style="color:red">4</span>  <i>Zizu</i> examples</h1>
-  <div class="row">
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc4.png' alt=''>
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-1.png' alt=''>
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-1.png' alt=''>
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-1.png' alt=''>
+<div class="exemplar">
+  <h1>You have <span style="color:red">4</span>  <i>Zizu</i> examples</h1>
+    <div id="CSplus">
+      <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc4.png' alt=''>
+      <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-1.png' alt=''>
+      <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-1.png' alt=''>
+      <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-1.png' alt=''>
   </div>
-</div>
-<div id="box2">
-    <h2> Below are examples of what is <b><i>not</i></b> a <i>Zizu</i>! <b>Avoid them</b> as much as possible</h2>
-  <div id="centre">
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-5.png' alt=''>
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-5.png' alt=''>
-    <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-5.png' alt=''>
-  </div>
+  <h2> Below are examples of what is <b><i>not</i></b> a <i>Zizu</i>! <b>Avoid them</b> as much as possible</h2>
+    <div id="CSminus">
+        <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-5.png' alt=''>
+        <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-5.png' alt=''>
+        <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-5.png' alt=''>
+    </div>
 </div>
 
 
 
 <style>
   #display_stage_background {
-      width: 100vw;
-      background-color: white;
-    }
+    width: 100vw;
+    background-color: white;
+  }
   
-    #display_stage {
-      position: fixed;
-      z-index: 2;
-      top: 25vh;
-      bottom: 0vh;
-      width: 98vw;
-      height: 75vh;
-      background-color: transparent;
-      overflow-y: hidden;
-      overflow-x: hidden;
-    }
-    
-  #box1 {
+  #display_stage {
+    position: fixed;
+    z-index: 2;
+    top: 25vh;
+    bottom: 0vh;
+    width: 98vw;
+    height: 75vh;
+    background-color: transparent;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  .exemplar {
     position: fixed;
     top: 1vh;
-    width: 40vw;
-    height: 34vh;
-    left: 8%;
-    display: block;
+    left: 10vw;
+    right: 10vw;
+    height: 400px;
+    display: inline-block;
     border: 2px solid black;
   }
 
-  #box2 {
-    position: fixed;
-    top: 1vh;
-    width: 40vw;
-    height: 34vh;
-    right: 8%;
-    display: block;
-    border: 2px solid black;
+  #CSplus {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  #CSminus {
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
   }
 
   h1 {
-    margin: 5px 25px;
-    font-size: 17px;
+    margin: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    left: 5vw;
+    right: 5vw
   }
 
   h2 {
-    margin: 5px 25px;
-    font-size: 17px;
-  }
-
-  .row {
-    display: flex;
-    margin: 10px 0;
-    height: 13vh;
+    margin: 20px;
+    font-size: 20px;
+    text-align: center;
+    left: 5vw;
+    right: 5vw
   }
 
   .size {
@@ -80,14 +82,6 @@
     height: 150px;
     margin: 0 auto;
     display: block;
-  }
-
-  #centre {
-    position: absolute;
-    top: 9vh;
-    display: flex;
-    margin: 10px auto;
-    height: 13vh;
   }
 
   </style>
