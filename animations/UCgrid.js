@@ -7,9 +7,9 @@
   var correctcounter = 0;
   var fribpics = new Array;
   fribpics = [
-    '1222.png',
-    '2133.png',
-    '3311.png'
+    'fc2-1.png',
+    'fc3-1.png',
+    'fc1-1.png'
   ];
 
 
@@ -72,7 +72,7 @@
 function addpicture(){
   //whatever you want to do when they open a 'correct' box
   var fribid = "frib" + (correctcounter + 1);
-  var friblink = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fc1-training/Fc1_' + fribpics[correctcounter];
+  var friblink = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/' + fribpics[correctcounter];
   document.getElementById(fribid).src = friblink;
 }
 
