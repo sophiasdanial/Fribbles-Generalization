@@ -1,6 +1,3 @@
-this.hideNextButton();
-	var that = this;
-
 //declaring variables
   var counter = 0;
   var answersheet = new Array;
@@ -81,5 +78,4 @@ function addpicture(){
 
 function finish(){
 //whatever you want to do when they open 9 boxes
-that.clickNextButton();
 }
