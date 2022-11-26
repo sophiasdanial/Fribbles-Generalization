@@ -8,7 +8,6 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
     var requiredResources = [
         task_github + "js/jspsych/jspsych.js",
-        task_github + "js/jspsych/plugins/jspsych-html-keyboard-response.js",
         task_github + "js/jspsych/plugins/jspsych-image-slider-response.js",
 		task_github + "js/jspsych/plugins/jspsych-preload.js",
         "https://sophiasdanial.github.io/Fribbles-Generalization/Fribbles-test/Fribbles-Task.js"

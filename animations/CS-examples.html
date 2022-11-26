@@ -1,0 +1,119 @@
+<style>
+    body {
+        overflow:hidden;
+        height: 100vh;
+        display: block;
+    }
+    .main {
+        display: block;
+        position: fixed;
+        z-index: -1;
+        top: 120%;
+        left: 27%;
+        width: 50%;
+        font-size: 23px;
+        text-align: center;
+        animation-delay: 1s;
+        animation: slidedown 20s;
+    }
+    @keyframes slidedown {
+        0% {top: -10%;}
+        15% {top: 30%;}
+        67% {top: 30%;}
+        77% {top: 120%;}
+        100% {top: 120%;}
+    }
+
+    
+    h2 {
+      position: fixed;
+      left: 40%;
+      top: 1%;
+      font-size: 30px;
+      animation: appear 20s;
+    }
+    @keyframes appear {
+        0% {opacity: 0}
+        70% {opacity: 0}
+        73% {opacity: 1}
+        85% {opacity: 1}
+        90% {opacity:0}
+        100% {opacity: 0}
+    }
+   
+  
+    .imgn {
+        position: relative;
+        top: -50%;
+        left: -50%;
+        max-height: 200px;
+        animation: size 20s;
+    }
+    @keyframes size {
+        0% {height: 600px; width:auto}
+        85% {height: 600px; width:auto}
+        100% {max-height: 200px; width:auto}
+    }
+
+    .ng1 {
+        display: block;
+        position: fixed;
+        z-index: 1;
+        top: 5%;
+        left: 25%;
+        animation: slide1 20s;
+    }
+    @keyframes slide1 {
+        0% {top:50%; left: 200%;}
+        10% {top:50%; left:110%;}
+        18% {top:50%; left:25%;}
+        65% {top:50%; left:25%;}
+        70% {top:5%; left:25%;}
+        90% {top:5%; left:25%;}
+        100% {top:-70%; left:25%;}
+    }
+
+    .ng2 {
+        display: block;
+        position: fixed;
+        z-index: 2;
+        top: 5%;
+        left: 50%;
+        animation: slide2 20s;
+    }
+    @keyframes slide2 {
+        0% {top:50%; left:110%;}
+        15% {top:50%; left:100%;}
+        30% {top:50%; left:50%;}
+        65% {top:50%; left:50%;}
+        70% {top:5%; left:50%;}
+        90% {top:5%; left:50%;}
+        100% {top:-70%; left:50%;}
+    }
+
+    .ng3 {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        top: 5%;
+        left: 75%;
+        animation: slide3 20s;
+    }
+    @keyframes slide3 {
+        0% {top:50%; left:110%;}
+        30% {top:50%; left:100%;}
+        35% {top:50%; left:75%;}
+        65% {top:50%; left:75%;}
+        70% {top:5%; left:75%;}
+        90% {top:5%; left:75%;}
+        100% {top:-70%; left:75%;}
+    }
+    
+</style>
+<body>
+        <h2>These items are <b>not</b> <i>Zizu</i>!</h2>
+        <div class="main"><p>Now we will show you items that <b>do not</b> belong to the category <i>Zizu</i>. Try to avoid them!</p></div>
+        <div class="ng1"><img class="imgn" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-5.png' alt=''></div>
+        <div class="ng2"><img class="imgn" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-5.png' alt=''></div>
+        <div class="ng3"><img class="imgn" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-5.png' alt=''></div>
+</body>
