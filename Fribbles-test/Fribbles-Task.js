@@ -79,5 +79,6 @@ var fc24 = jsPsych.data.get().filter({ftype: "fc2-4"}).select('response').values
 var fc32 = jsPsych.data.get().filter({ftype: "fc3-2"}).select('response').values;
 var fc33 = jsPsych.data.get().filter({ftype: "fc3-3"}).select('response').values;
 var fc34 = jsPsych.data.get().filter({ftype: "fc3-4"}).select('response').values;
-
+///browser interaction data
+var browser = jsPsych.data.getInteractionData()
 

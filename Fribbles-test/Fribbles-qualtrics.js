@@ -53,6 +53,8 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 var fc33 = jsPsych.data.get().filter({ftype: "fc3-3"}).select('response').values;
                 var fc34 = jsPsych.data.get().filter({ftype: "fc3-4"}).select('response').values;
 
+                var browser = jsPsych.data.getInteractionData()
+
                 // save to qualtrics embedded data
                 Qualtrics.SurveyEngine.setEmbeddedData("fc12", fc12);
                 Qualtrics.SurveyEngine.setEmbeddedData("fc13", fc13);
@@ -65,6 +67,8 @@ Qualtrics.SurveyEngine.addOnload(function () {
                 Qualtrics.SurveyEngine.setEmbeddedData("fc32", fc32);
                 Qualtrics.SurveyEngine.setEmbeddedData("fc33", fc33);
                 Qualtrics.SurveyEngine.setEmbeddedData("fc34", fc34);
+
+                Qualtrics.SurveyEngine.setEmbeddedData("browser", browser);
 
                 jQuery('#display_stage').remove();
                 jQuery('#display_stage_background').remove();

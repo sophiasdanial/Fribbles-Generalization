@@ -33,6 +33,7 @@ function change(buttonid) {
   }
 }
 
+
 function addCount(buttonid) {
   counter += 1;
   console.log(counter);
