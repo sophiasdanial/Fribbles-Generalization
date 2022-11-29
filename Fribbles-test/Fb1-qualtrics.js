@@ -19,7 +19,7 @@ Qualtrics.SurveyEngine.addOnload(function () {
         task_github + "js/jspsych/plugins/jspsych-html-keyboard-response.js",
         task_github + "js/jspsych/plugins/jspsych-image-slider-response.js",
 		task_github + "js/jspsych/plugins/jspsych-preload.js",
-        "https://sophiasdanial.github.io/Fribbles-Generalization/Fribbles-test/Fribbles-Fa1.js"
+        "https://sophiasdanial.github.io/Fribbles-Generalization/Fribbles-test/Fribbles-Fb1.js"
     ];
 
     function loadScript(idx) {
