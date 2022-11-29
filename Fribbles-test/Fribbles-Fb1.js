@@ -1,7 +1,7 @@
 //* based on jsPsych v6.x 
 /* Fribbles Task (examples)*/
 var timeline = [];
-var test_link = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fa1/'
+var test_link = 'https://sophiasdanial.github.io/Fribbles-Generalization/images/Fb1/'
 var preload = {
     type: 'preload',
     show_progress_bar: true,
@@ -13,15 +13,15 @@ timeline.push(preload)
 /////// List stimuli /////////
 // note - test stimuli contains either Head 1 or Leg 1
 var test_stimuli = [
-    {stimulus: test_link + "Fa1_2121.jpg"},
-    {stimulus: test_link + "Fa1_1322.jpg"},
-    {stimulus: test_link + "Fa1_3221.jpg"}    
+    {stimulus: test_link + "Fb1_1221.png"},
+    {stimulus: test_link + "Fb1_1322.png"},
+    {stimulus: test_link + "Fb1_1331.png"}    
 ];
 //test blocks//
 var testchoice= {
     type: 'image-slider-response',
     stimulus: jsPsych.timelineVariable('stimulus'),
-    prompt: '<p>How likely is this item from the category <i>[beeba]</i>?</p>',
+    prompt: '<p>How likely is this item from the category <i>beeba</i>?</p>',
     labels: ['0', '100'],
     slider_width: 1000,
     button_label: 'Continue',
