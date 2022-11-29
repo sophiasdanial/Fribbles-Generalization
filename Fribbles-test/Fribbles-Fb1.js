@@ -10,12 +10,6 @@ var preload = {
 }
 timeline.push(preload)
 
-var enter_fullscreen = {
-    type: 'fullscreen',
-    fullscreen_mode: true
-  }
-timeline.push(enter_fullscreen);
-
 /////// List stimuli /////////
 // note - test stimuli contains either Head 1 or Leg 1
 var test_stimuli = [

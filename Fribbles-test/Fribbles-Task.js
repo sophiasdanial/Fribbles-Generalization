@@ -20,12 +20,7 @@ var preload = {
         'https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-test/fc3-4.png'
     ]
 }
-timeline.push(preload)
-var enter_fullscreen = {
-    type: 'fullscreen',
-    fullscreen_mode: true
-  }
-timeline.push(enter_fullscreen);
+timeline.push(preload);
 /////// List stimuli /////////
 var test_stimuli = [
     //FC1
