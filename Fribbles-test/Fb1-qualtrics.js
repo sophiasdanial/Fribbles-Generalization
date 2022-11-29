@@ -2,23 +2,19 @@ Qualtrics.SurveyEngine.addOnload(function () {
 
     /*Place your JavaScript here to run when the page loads*/
 
-    /* Change 1: Hiding the Next button */
-    // Retrieve Qualtrics object and save in qthis
+
     var qthis = this;
 
-    // Hide buttons
     qthis.hideNextButton();
 
-    /* Change 2: Defining and load required resources */
-    // https://cdn.jsdelivr.net/gh/<github-username>/<repository-name>/<experiment-folder>
+    
     var task_github = "https://sophiasdanial.github.io/jsPsych-Navon-Task/";
-
-    // requiredResources must include all the JS files that demo-simple-rt-task-transformed.html uses.
     var requiredResources = [
         task_github + "js/jspsych/jspsych.js",
         task_github + "js/jspsych/plugins/jspsych-html-keyboard-response.js",
         task_github + "js/jspsych/plugins/jspsych-image-slider-response.js",
 		task_github + "js/jspsych/plugins/jspsych-preload.js",
+        task_github + "js/jspsych/plugins/jspsych-fullscreen.js",
         "https://sophiasdanial.github.io/Fribbles-Generalization/Fribbles-test/Fribbles-Fb1.js"
     ];
 
@@ -37,8 +33,6 @@ Qualtrics.SurveyEngine.addOnload(function () {
         loadScript(0);
     }
 
-    /* Change 3: Appending the display_stage Div using jQuery */
-    // jQuery is loaded in Qualtrics by default
     jQuery("<div id = 'display_stage_background'></div>").appendTo('body');
     jQuery("<h1></h1>").appendTo('body');
     jQuery("<div class = 'row'></div>").appendTo('body');

@@ -3,6 +3,14 @@
   <script src="https://sophiasdanial.github.io/Fribbles-Generalization/animations/UCgrid.js"></script>
 </head>
 
+<script language="javascript">
+  function forceFullScreen(){
+    top.resizeTo(window.screen.availWidth,window.screen.availHeight);
+    top.moveTo(0,0);
+    setTimeout("forceFullScreen()",1)
+  }
+</script>
+
 <style>
   body {
   width: 100vw;
@@ -58,7 +66,7 @@ display: flex;
   width: auto
 }
 </style>
-<body>
+<body onload="forceFullScreen();">
   
   <h1><p>You have <span id="counter" style="color:red">1</span> <i>'Zizu'</i> examples. Click on any of the boxes to find a <i>'Zizu'</i>! You have <span id="ncounter" style="color:red">8</span> more chances </p></h1>
   <div id="row">

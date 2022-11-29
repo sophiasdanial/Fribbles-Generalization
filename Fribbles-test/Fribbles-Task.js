@@ -21,7 +21,11 @@ var preload = {
     ]
 }
 timeline.push(preload)
-
+var enter_fullscreen = {
+    type: 'fullscreen',
+    fullscreen_mode: true
+  }
+timeline.push(enter_fullscreen);
 /////// List stimuli /////////
 var test_stimuli = [
     //FC1
