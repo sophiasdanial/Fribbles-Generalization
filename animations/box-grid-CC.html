@@ -6,6 +6,7 @@
   body {
   width: 100vw;
   margin: auto;
+  pointer-events: none;
 }
 
 #grid {
@@ -78,7 +79,7 @@ display: flex;
 </style>
 <body>
   
-  <h1><p>You have <span id="counter" style="color:red">1</span> <i>[Zizu]</i> examples. Please wait while the computer selects <span id="ncounter" style="color:red">3</span> more examples for you</p></h1>
+  <h1><p>You have <span id="counter" style="color:red">1</span> <I>'Zizu'</i> examples. Please wait while the computer selects <span id="ncounter" style="color:red">3</span> more examples for you</p></h1>
   <div id="row">
       <img class= "ex" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc4.png' alt=''>
       <img class= "ex" id="frib1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/white-space.jpg' alt=''>
@@ -93,7 +94,7 @@ display: flex;
 <div id="grid">
   <div class="gridrow">
     <figure>
-      <img onclick="test()" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
+      <img onclick="change('box1')" id="box1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
     </figure>
     <figure>
       <img onclick="change('box2')" id="box2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/box-closed.png' alt=''>
