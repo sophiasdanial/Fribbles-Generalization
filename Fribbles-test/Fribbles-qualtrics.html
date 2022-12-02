@@ -3,19 +3,19 @@
 </head>
 
 <body>
-  <div id="exemplar"></div>
+  <div class="exemplar">
       <h1>You have <span style="color:red">4</span>  <i>Zizu</i> examples</h1>
       <div id="CSplus">
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc4.png' alt=''>
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-1.png' alt=''>
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-1.png' alt=''>
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-1.png' alt=''>
+          <img class="size1" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc4.png' alt=''>
+          <img class="size2" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-1.png' alt=''>
+          <img class="size3" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-1.png' alt=''>
+          <img class="size4" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-1.png' alt=''>
       </div>
-      <h2> Below are examples of what is <span style="color:red"><b><i>not</i></b></span> a <i>Zizu</i>! <b>Avoid them</b> as much as possible</h2>
+      <h2> These are examples of what is <span style="color:red"><b><i>not</i></b></span> a <i>Zizu</i>! <span style="color:red"><b>Avoid them</b> as much as possible</span></h2>
       <div id="CSminus">
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-5.png' alt=''>
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-5.png' alt=''>
-          <img class="size" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-5.png' alt=''>
+          <img class="size5" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc2-5.png' alt=''>
+          <img class="size6" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc3-5.png' alt=''>
+          <img class="size7" src='https://sophiasdanial.github.io/Fribbles-Generalization/images/fc-training/fc1-5.png' alt=''>
       </div>
   </div>
 </body>
@@ -39,28 +39,26 @@
   }
   
   .exemplar {
-    top: 0;
+      position:fixed;
+    top: 4vh;
+    left: 0vw;
     width:100vw;
-    height: 400px;
-    display: inline-block;
+    height: 200px;
+    display: inline-flex;
   }
 
   #CSplus {
-    position: fixed;
-    top: 2vh;
-    left: 1vw;
-    height: 200px;
-    width: 50vw;
-    display: flex;
+      left:0;
+      width: 56vw;
+    border: 5px solid grey;
+    display: inline-flex;
   }
 
   #CSminus {
-    position: fixed;
-    top: 23vh;
-    left:1vw;
-    height: 200px;
-    width: 50vw;
-    display: flex;
+      left:56vw;
+      width:44vw;
+      border: 5px solid grey;
+    display: inline-flex;
   }
 
   h1 {
@@ -73,13 +71,51 @@
   h2 {
     font-size: 20px;
     position: fixed;
-    left: 2vw;
-    top:19vh;
+    left: 57vw;;
+    top:0;
   }
 
-  .size {
-    position: relative;
-    max-height: 150px;
+  .size1 {
+      position:absolute;
+      left:-3vw;
+      display:flex;
+    max-height: 200px;
+  }
+  .size2 {
+      position:absolute;
+      left:11vw;
+      display:flex;
+    max-height: 200px;
+  }
+  .size3 {
+      position: absolute;
+      left:25vw;
+      display:flex;
+    max-height: 200px;
+  }
+  .size4 {
+      position:absolute;
+      left:39vw;
+      display:flex;
+    max-height: 200px;
+  }
+  .size5 {
+      position:absolute;
+      left:53vw;
+      display:flex;
+    max-height: 200px;
+  }
+  .size6 {
+      position:absolute;
+      left:67vw;
+      display:flex;
+    max-height: 200px;
+  }
+  .size7 {
+      position:absolute;
+      left:81vw;
+      display:flex;
+    max-height: 200px;
   }
 
   </style>
