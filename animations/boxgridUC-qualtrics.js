@@ -79,7 +79,8 @@ Qualtrics.SurveyEngine.addOnReady(function()
     jQuery(fribid).src = friblink;
     }
 
-    function finish(){that.clickNextButton();}
+    //once all boxes are opened
+    function finish(){setTimeout(that.clickNextButton(),5000)}
 
     //declare each element{
     jQuery("#box1").click(function(event){
