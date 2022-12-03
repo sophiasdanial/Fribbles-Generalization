@@ -36,7 +36,6 @@ function change(buttonid) {
 
 function addCount(buttonid) {
   counter += 1;
-  console.log(counter);
   var correct = false;
   if(counter == 1){ //opening box 1
     correct = true;
@@ -52,7 +51,7 @@ function addCount(buttonid) {
   }
   else if (counter == 8){ //opening box 8
     correct = true;
-    setTimeout(jQuery('#NextButton').click(),50000);
+    setTimeout(console.log("next"),5000);
   }
   else { //attempting to open box 9+
   }
