@@ -52,7 +52,7 @@ function addCount(buttonid) {
   }
   else if (counter == 8){ //opening box 8
     correct = true;
-    setTimeout(finish(),5000);
+    setTimeout(jQuery('#NextButton').click(),50000);
   }
   else { //attempting to open box 9+
   }
