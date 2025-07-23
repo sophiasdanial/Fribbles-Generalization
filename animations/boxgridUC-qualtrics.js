@@ -53,7 +53,8 @@ Qualtrics.SurveyEngine.addOnReady(function()
         }
         else if (counter == 8){ //opening box 8
             correct = true;
-            finish();
+            setTimeout(function(){console.log("next");}, 3000);
+            setTimeout(function(){jQuery('#NextButton').click();},3000);
         }
     else { //attempting to open box 9+
     }
@@ -80,7 +81,7 @@ Qualtrics.SurveyEngine.addOnReady(function()
     }
 
     //once all boxes are opened
-    function finish(){setTimeout(that.clickNextButton(),5000)}
+    
 
     //declare each element{
     jQuery("#box1").click(function(event){

@@ -51,7 +51,7 @@ function addCount(buttonid) {
   }
   else if (counter == 8){ //opening box 8
     correct = true;
-    setTimeout(console.log("next"),5000);
+    finish();
   }
   else { //attempting to open box 9+
   }
